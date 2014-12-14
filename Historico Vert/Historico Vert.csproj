@@ -58,6 +58,12 @@
     <Compile Include="BanhoTosa\PesquisaBanhoTosa.Designer.cs">
       <DependentUpon>PesquisaBanhoTosa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Configuracoes\Configuracoes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Configuracoes\Configuracoes.Designer.cs">
+      <DependentUpon>Configuracoes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Especie\PesquisaEspecie.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BanhoTosa\PesquisaBanhoTosa.resx">
       <DependentUpon>PesquisaBanhoTosa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracoes\Configuracoes.resx">
+      <DependentUpon>Configuracoes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Especie\PesquisaEspecie.resx">
       <DependentUpon>PesquisaEspecie.cs</DependentUpon>

@@ -1,19 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using Historico_Vert.Pessoa;
-using Historico_Vert.Prontuario;
-using Historico_Vert.Paciente;
+using Historico_Vert.BanhoTosa;
 using Historico_Vert.Especie;
+using Historico_Vert.Paciente;
+using Historico_Vert.Pessoa;
+using Historico_Vert.Principal;
+using Historico_Vert.Prontuario;
 using Historico_Vert.Raca;
 using Historico_Vert.Vacina;
-using Historico_Vert.BanhoTosa;
-using Historico_Vert.Principal;
+
 
 namespace Historico_Vert
 {
@@ -228,6 +224,14 @@ namespace Historico_Vert
             var principio = new Inicio(this);
             Controls.Add(principio);
             Show(principio);
+        }
+
+        private void configuraçõesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ClearForm();
+            var configuracoes = new Configuracoes.Configuracoes();
+            Controls.Add(configuracoes);
+            Show(configuracoes);
         }
 
     }

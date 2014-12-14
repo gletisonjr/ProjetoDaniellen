@@ -54,6 +54,7 @@
             this.tsmiBanhoTosa = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiBanhoTosaNovo = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiBanhoTosaPesquisar = new System.Windows.Forms.ToolStripMenuItem();
+            this.configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,7 +69,8 @@
             this.tsmiRaca,
             this.tsmiMedico,
             this.tsmiVacina,
-            this.tsmiBanhoTosa});
+            this.tsmiBanhoTosa,
+            this.configuraçõesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(819, 24);
@@ -94,14 +96,14 @@
             // tsmiProntuarioNovo
             // 
             this.tsmiProntuarioNovo.Name = "tsmiProntuarioNovo";
-            this.tsmiProntuarioNovo.Size = new System.Drawing.Size(152, 22);
+            this.tsmiProntuarioNovo.Size = new System.Drawing.Size(124, 22);
             this.tsmiProntuarioNovo.Text = "Novo";
             this.tsmiProntuarioNovo.Click += new System.EventHandler(this.tsmiProntuarioNovo_Click);
             // 
             // tsmiProntuarioPesquisar
             // 
             this.tsmiProntuarioPesquisar.Name = "tsmiProntuarioPesquisar";
-            this.tsmiProntuarioPesquisar.Size = new System.Drawing.Size(152, 22);
+            this.tsmiProntuarioPesquisar.Size = new System.Drawing.Size(124, 22);
             this.tsmiProntuarioPesquisar.Text = "Pesquisar";
             this.tsmiProntuarioPesquisar.Click += new System.EventHandler(this.tsmiProntuarioPesquisar_Click);
             // 
@@ -266,6 +268,13 @@
             this.tsmiBanhoTosaPesquisar.Text = "Pesquisar";
             this.tsmiBanhoTosaPesquisar.Click += new System.EventHandler(this.tsmiBanhoTosaPesquisar_Click);
             // 
+            // configuraçõesToolStripMenuItem
+            // 
+            this.configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
+            this.configuraçõesToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
+            this.configuraçõesToolStripMenuItem.Text = "Configurações";
+            this.configuraçõesToolStripMenuItem.Click += new System.EventHandler(this.configuraçõesToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -314,6 +323,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiBanhoTosa;
         private System.Windows.Forms.ToolStripMenuItem tsmiBanhoTosaNovo;
         private System.Windows.Forms.ToolStripMenuItem tsmiBanhoTosaPesquisar;
+        private System.Windows.Forms.ToolStripMenuItem configuraçõesToolStripMenuItem;
     }
 }
 
