@@ -11,9 +11,17 @@ namespace Historico_Vert.BanhoTosa
 {
     public partial class PesquisaBanhoTosa : UserControl
     {
+        private Form1 form;
+
         public PesquisaBanhoTosa()
         {
             InitializeComponent();
+        }
+
+        public PesquisaBanhoTosa(Form1 form)
+        {
+            InitializeComponent();
+            this.form = form;
         }
 
         private void btnPesquisa_Click(object sender, EventArgs e)
@@ -35,6 +43,11 @@ namespace Historico_Vert.BanhoTosa
         private void txtNomeAnimal_Leave(object sender, EventArgs e)
         {
             grbPaciente.Visible = true;
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            form.DefineEvent("BanhoTosaNovo", "a");
         }
 
     }

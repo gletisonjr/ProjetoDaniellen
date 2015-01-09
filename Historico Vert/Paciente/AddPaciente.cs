@@ -11,9 +11,17 @@ namespace Historico_Vert
 {
     public partial class AddPaciente : UserControl
     {
+        private Form1 form;
+
         public AddPaciente()
         {
             InitializeComponent();
+        }
+
+        public AddPaciente(Form1 form)
+        {
+            InitializeComponent();
+            this.form = form;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -35,6 +43,21 @@ namespace Historico_Vert
         {
 
         }
+
+        private void btAcao_Click(object sender, EventArgs e)
+        {
+            if (btAcao.Text.Equals("Atualizar"))
+                MessageBox.Show("Atualizado com Sucesso!", "Atualização", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("Cadastro efetuado com sucesso!", "Cadastro de Pacientes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            form.DefineEvent("Inicio", new Object());
+        }
+
+        public void SetbtAcao_Text(String text)
+        {
+            btAcao.Text = text;
+        }
+
 
     }
 }

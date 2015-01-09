@@ -11,6 +11,8 @@ namespace Historico_Vert.Prontuario
 {
     public partial class AddProntuario : UserControl
     {
+        private Form1 form;
+
         public AddProntuario()
         {
             InitializeComponent();
@@ -18,6 +20,17 @@ namespace Historico_Vert.Prontuario
             txtProntuario.AcceptsReturn =
             txtProntuario.AcceptsTab =
             txtProntuario.WordWrap = true;
+        }
+
+        public AddProntuario(Form1 form)
+        {
+            InitializeComponent();
+            txtProntuario.ScrollBars = ScrollBars.Vertical;
+            txtProntuario.AcceptsReturn =
+            txtProntuario.AcceptsTab =
+            txtProntuario.WordWrap = true;
+            this.form = form;
+
         }
 
         private void rbtnHoje_CheckedChanged(object sender, EventArgs e)
@@ -53,6 +66,12 @@ namespace Historico_Vert.Prontuario
         private void grbProntuario_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Prontuario adicionado com sucesso!","Cadastro de Prontuarios", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            form.DefineEvent("Inicio", new Object());
         }
 
     }

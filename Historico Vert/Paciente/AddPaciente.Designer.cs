@@ -123,6 +123,7 @@
             this.btAcao.TabIndex = 30;
             this.btAcao.Text = "Cadastrar";
             this.btAcao.UseVisualStyleBackColor = true;
+            this.btAcao.Click += new System.EventHandler(this.btAcao_Click);
             // 
             // rdbOutra
             // 

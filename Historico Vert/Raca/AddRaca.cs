@@ -11,15 +11,25 @@ namespace Historico_Vert
 {
     public partial class AddRaca : UserControl
     {
+        private Form1 form;
+
         public AddRaca()
         {
             InitializeComponent();
             txtDescricao.ScrollBars = ScrollBars.Vertical;
         }
 
+        public AddRaca(Form1 form)
+        {
+            InitializeComponent();
+            txtDescricao.ScrollBars = ScrollBars.Vertical;
+            this.form = form;
+        }
+
         private void btnAcao_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Cadastro efetuado com sucesso!", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            form.DefineEvent("Inicio", new Object());
         }
         
     }

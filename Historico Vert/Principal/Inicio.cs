@@ -35,82 +35,82 @@ namespace Historico_Vert.Principal
 
         private void btnProntuarioNovo_Click(object sender, EventArgs e)
         {
-            forma.DefineEvent("ProntuarioNovo");
+            forma.DefineEvent("ProntuarioNovo", new Object());
         }
 
         private void btnProntuarioPesquisar_Click(object sender, EventArgs e)
         {
-            forma.DefineEvent("ProntuarioPesquisar");
+            forma.DefineEvent("ProntuarioPesquisar", new Object());
         }
 
         private void btnBanhoTosaNovo_Click(object sender, EventArgs e)
         {
-            forma.DefineEvent("BanhoTosaNovo");
+            forma.DefineEvent("BanhoTosaNovo", new Object());
         }
 
         private void btnBanhoTosaPesquisar_Click(object sender, EventArgs e)
         {
-            forma.DefineEvent("BanhoTosaPesquisar"); 
+            forma.DefineEvent("BanhoTosaPesquisar", new Object()); 
         }
 
         private void btnEspecieNovo_Click(object sender, EventArgs e)
         {
-            forma.DefineEvent("EspecieNovo");
+            forma.DefineEvent("EspecieNovo", new Object());
         }
 
         private void btnEspeciePesquisar_Click(object sender, EventArgs e)
         {
-            forma.DefineEvent("EspeciePesquisar");
+            forma.DefineEvent("EspeciePesquisar", new Object());
         }
 
         private void btnDonoNovo_Click(object sender, EventArgs e)
         {
-            forma.DefineEvent("DonoNovo");
+            forma.DefineEvent("DonoNovo", new Object());
         }
         
         private void btnDonoPesquisar_Click(object sender, EventArgs e)
         {
-            forma.DefineEvent("DonoPesquisar");
+            forma.DefineEvent("DonoPesquisar", new Object());
         }
 
         private void btnPacienteNovo_Click(object sender, EventArgs e)
         {
-            forma.DefineEvent("PacienteNovo");
+            forma.DefineEvent("PacienteNovo", new Object());
         }
 
         private void btnPacientePesquisar_Click(object sender, EventArgs e)
         {
-            forma.DefineEvent("PacientePesquisar");
+            forma.DefineEvent("PacientePesquisar", new Object());
         }
 
         private void btnRacaNovo_Click(object sender, EventArgs e)
         {
-            forma.DefineEvent("RacaNovo");
+            forma.DefineEvent("RacaNovo", new Object());
         }
 
         private void btnRacaPesquisar_Click(object sender, EventArgs e)
         {
-            forma.DefineEvent("RacaPesquisar");
+            forma.DefineEvent("RacaPesquisar", new Object());
         }
 
         private void btnVacinaNovo_Click(object sender, EventArgs e)
         {
-            forma.DefineEvent("VacinaNovo");
+            forma.DefineEvent("VacinaNovo", new Object());
         }
 
         private void btnVacinaPesquisar_Click(object sender, EventArgs e)
         {
-            forma.DefineEvent("VacinaPesquisar");
+            forma.DefineEvent("VacinaPesquisar", new Object());
         }
 
         private void btnMedicoNovo_Click(object sender, EventArgs e)
         {
-            forma.DefineEvent("MedicoNovo");
+            forma.DefineEvent("MedicoNovo", new Object());
         }
 
         private void btnMedicoPesquisar_Click(object sender, EventArgs e)
         {
-            forma.DefineEvent("MedicoPesquisar");
+            forma.DefineEvent("MedicoPesquisar", new Object());
         }
 
     }

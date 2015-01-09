@@ -86,6 +86,7 @@
             this.data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.banho = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tosa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.grbPesquisa.SuspendLayout();
             this.grbPaciente.SuspendLayout();
             this.grbPeriodo.SuspendLayout();
@@ -626,10 +627,11 @@
             // 
             // grbBanhoTosa
             // 
+            this.grbBanhoTosa.Controls.Add(this.btnEditar);
             this.grbBanhoTosa.Controls.Add(this.dtgvProntuarios);
             this.grbBanhoTosa.Location = new System.Drawing.Point(12, 287);
             this.grbBanhoTosa.Name = "grbBanhoTosa";
-            this.grbBanhoTosa.Size = new System.Drawing.Size(510, 367);
+            this.grbBanhoTosa.Size = new System.Drawing.Size(634, 367);
             this.grbBanhoTosa.TabIndex = 16;
             this.grbBanhoTosa.TabStop = false;
             this.grbBanhoTosa.Text = "Banhos e Tosas";
@@ -666,6 +668,16 @@
             this.tosa.HeaderText = "Tosa";
             this.tosa.Name = "tosa";
             this.tosa.ReadOnly = true;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(510, 150);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(114, 32);
+            this.btnEditar.TabIndex = 28;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // PesquisaBanhoTosa
             // 
@@ -749,5 +761,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn data;
         private System.Windows.Forms.DataGridViewTextBoxColumn banho;
         private System.Windows.Forms.DataGridViewTextBoxColumn tosa;
+        private System.Windows.Forms.Button btnEditar;
     }
 }

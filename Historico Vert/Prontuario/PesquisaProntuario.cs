@@ -11,6 +11,8 @@ namespace Historico_Vert
 {
     public partial class PesquisaProntuario : UserControl
     {
+        private Form1 form;
+
         public PesquisaProntuario()
         {
             InitializeComponent();
@@ -19,6 +21,16 @@ namespace Historico_Vert
             txtProntuario.AcceptsTab =
             txtProntuario.WordWrap = true;
          }
+
+        public PesquisaProntuario(Form1 form)
+        {
+            InitializeComponent();
+            txtProntuario.ScrollBars = ScrollBars.Vertical;
+            txtProntuario.AcceptsReturn =
+            txtProntuario.AcceptsTab =
+            txtProntuario.WordWrap = true;
+            this.form = form;
+        }
 
         private void UserControl1_Load(object sender, EventArgs e)
         {
@@ -73,6 +85,7 @@ namespace Historico_Vert
         {
             txtProntuario.ReadOnly =
             txtResumo.ReadOnly = true;
+            MessageBox.Show("Atualizado com Sucesso!", "Atualização", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void grbPesquisa_Enter(object sender, EventArgs e)

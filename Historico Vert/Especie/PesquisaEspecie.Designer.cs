@@ -37,12 +37,16 @@
             this.btnPesquisa = new System.Windows.Forms.Button();
             this.txtNomeEspecie = new System.Windows.Forms.TextBox();
             this.lblNomeEspecie = new System.Windows.Forms.Label();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnAtualizar = new System.Windows.Forms.Button();
             this.grbEspecie.SuspendLayout();
             this.grbPesquisa.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbEspecie
             // 
+            this.grbEspecie.Controls.Add(this.btnEditar);
+            this.grbEspecie.Controls.Add(this.btnAtualizar);
             this.grbEspecie.Controls.Add(this.txtDescricao);
             this.grbEspecie.Controls.Add(this.lblDescricao);
             this.grbEspecie.Controls.Add(this.txtNome);
@@ -50,7 +54,7 @@
             this.grbEspecie.Location = new System.Drawing.Point(12, 82);
             this.grbEspecie.Name = "grbEspecie";
             this.grbEspecie.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.grbEspecie.Size = new System.Drawing.Size(484, 193);
+            this.grbEspecie.Size = new System.Drawing.Size(578, 193);
             this.grbEspecie.TabIndex = 10;
             this.grbEspecie.TabStop = false;
             this.grbEspecie.Text = "Espécie";
@@ -99,14 +103,14 @@
             this.grbPesquisa.Location = new System.Drawing.Point(12, 13);
             this.grbPesquisa.Name = "grbPesquisa";
             this.grbPesquisa.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.grbPesquisa.Size = new System.Drawing.Size(484, 63);
+            this.grbPesquisa.Size = new System.Drawing.Size(578, 63);
             this.grbPesquisa.TabIndex = 16;
             this.grbPesquisa.TabStop = false;
             this.grbPesquisa.Text = "Pesquisa Espécie";
             // 
             // btnPesquisa
             // 
-            this.btnPesquisa.Location = new System.Drawing.Point(350, 21);
+            this.btnPesquisa.Location = new System.Drawing.Point(458, 21);
             this.btnPesquisa.Name = "btnPesquisa";
             this.btnPesquisa.Size = new System.Drawing.Size(114, 32);
             this.btnPesquisa.TabIndex = 12;
@@ -118,7 +122,7 @@
             // 
             this.txtNomeEspecie.Location = new System.Drawing.Point(98, 28);
             this.txtNomeEspecie.Name = "txtNomeEspecie";
-            this.txtNomeEspecie.Size = new System.Drawing.Size(205, 20);
+            this.txtNomeEspecie.Size = new System.Drawing.Size(338, 20);
             this.txtNomeEspecie.TabIndex = 3;
             // 
             // lblNomeEspecie
@@ -130,6 +134,26 @@
             this.lblNomeEspecie.TabIndex = 2;
             this.lblNomeEspecie.Text = "Nome Espécie:";
             // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(458, 69);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(114, 32);
+            this.btnEditar.TabIndex = 30;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.Location = new System.Drawing.Point(458, 107);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(114, 32);
+            this.btnAtualizar.TabIndex = 29;
+            this.btnAtualizar.Text = "Atualizar";
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
+            // 
             // PesquisaEspecie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -137,7 +161,7 @@
             this.Controls.Add(this.grbPesquisa);
             this.Controls.Add(this.grbEspecie);
             this.Name = "PesquisaEspecie";
-            this.Size = new System.Drawing.Size(542, 305);
+            this.Size = new System.Drawing.Size(751, 305);
             this.grbEspecie.ResumeLayout(false);
             this.grbEspecie.PerformLayout();
             this.grbPesquisa.ResumeLayout(false);
@@ -157,5 +181,7 @@
         private System.Windows.Forms.Button btnPesquisa;
         private System.Windows.Forms.TextBox txtNomeEspecie;
         private System.Windows.Forms.Label lblNomeEspecie;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnAtualizar;
     }
 }

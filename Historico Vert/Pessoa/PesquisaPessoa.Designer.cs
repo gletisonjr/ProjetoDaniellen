@@ -56,12 +56,14 @@
             this.btnPesquisa = new System.Windows.Forms.Button();
             this.txtNomeDono = new System.Windows.Forms.TextBox();
             this.lblNomeDono = new System.Windows.Forms.Label();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.grbPessoa.SuspendLayout();
             this.grbPesquisa.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbPessoa
             // 
+            this.grbPessoa.Controls.Add(this.btnEditar);
             this.grbPessoa.Controls.Add(this.lblEmail2);
             this.grbPessoa.Controls.Add(this.lblEmail1);
             this.grbPessoa.Controls.Add(this.lblTelefone2);
@@ -87,7 +89,7 @@
             this.grbPessoa.Controls.Add(this.lblCRMV1);
             this.grbPessoa.Location = new System.Drawing.Point(13, 81);
             this.grbPessoa.Name = "grbPessoa";
-            this.grbPessoa.Size = new System.Drawing.Size(419, 240);
+            this.grbPessoa.Size = new System.Drawing.Size(484, 240);
             this.grbPessoa.TabIndex = 16;
             this.grbPessoa.TabStop = false;
             this.grbPessoa.Text = "Dados Dono";
@@ -341,6 +343,16 @@
             this.lblNomeDono.TabIndex = 2;
             this.lblNomeDono.Text = "Nome Dono:";
             // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(350, 192);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(114, 32);
+            this.btnEditar.TabIndex = 38;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
             // PesquisaPessoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -387,5 +399,6 @@
         private System.Windows.Forms.Button btnPesquisa;
         private System.Windows.Forms.TextBox txtNomeDono;
         private System.Windows.Forms.Label lblNomeDono;
+        private System.Windows.Forms.Button btnEditar;
     }
 }

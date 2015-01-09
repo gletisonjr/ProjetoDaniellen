@@ -37,6 +37,8 @@
             this.lblDescricao = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnAtualizar = new System.Windows.Forms.Button();
             this.grbPesquisa.SuspendLayout();
             this.grbVacina.SuspendLayout();
             this.SuspendLayout();
@@ -49,14 +51,14 @@
             this.grbPesquisa.Location = new System.Drawing.Point(12, 13);
             this.grbPesquisa.Name = "grbPesquisa";
             this.grbPesquisa.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.grbPesquisa.Size = new System.Drawing.Size(484, 63);
+            this.grbPesquisa.Size = new System.Drawing.Size(605, 63);
             this.grbPesquisa.TabIndex = 18;
             this.grbPesquisa.TabStop = false;
             this.grbPesquisa.Text = "Pesquisa Vacina";
             // 
             // btnPesquisa
             // 
-            this.btnPesquisa.Location = new System.Drawing.Point(350, 21);
+            this.btnPesquisa.Location = new System.Drawing.Point(468, 21);
             this.btnPesquisa.Name = "btnPesquisa";
             this.btnPesquisa.Size = new System.Drawing.Size(114, 32);
             this.btnPesquisa.TabIndex = 12;
@@ -68,7 +70,7 @@
             // 
             this.txtNomeVacina.Location = new System.Drawing.Point(98, 28);
             this.txtNomeVacina.Name = "txtNomeVacina";
-            this.txtNomeVacina.Size = new System.Drawing.Size(205, 20);
+            this.txtNomeVacina.Size = new System.Drawing.Size(351, 20);
             this.txtNomeVacina.TabIndex = 3;
             // 
             // lblNomeVacina
@@ -82,6 +84,8 @@
             // 
             // grbVacina
             // 
+            this.grbVacina.Controls.Add(this.btnEditar);
+            this.grbVacina.Controls.Add(this.btnAtualizar);
             this.grbVacina.Controls.Add(this.txtDescricao);
             this.grbVacina.Controls.Add(this.lblDescricao);
             this.grbVacina.Controls.Add(this.txtNome);
@@ -89,7 +93,7 @@
             this.grbVacina.Location = new System.Drawing.Point(12, 82);
             this.grbVacina.Name = "grbVacina";
             this.grbVacina.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.grbVacina.Size = new System.Drawing.Size(484, 193);
+            this.grbVacina.Size = new System.Drawing.Size(605, 193);
             this.grbVacina.TabIndex = 17;
             this.grbVacina.TabStop = false;
             this.grbVacina.Text = "Vacina";
@@ -130,6 +134,26 @@
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome:";
             // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(468, 65);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(114, 32);
+            this.btnEditar.TabIndex = 30;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.Location = new System.Drawing.Point(468, 103);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(114, 32);
+            this.btnAtualizar.TabIndex = 29;
+            this.btnAtualizar.Text = "Atualizar";
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
+            // 
             // PesquisaVacina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -137,7 +161,7 @@
             this.Controls.Add(this.grbPesquisa);
             this.Controls.Add(this.grbVacina);
             this.Name = "PesquisaVacina";
-            this.Size = new System.Drawing.Size(509, 307);
+            this.Size = new System.Drawing.Size(709, 307);
             this.grbPesquisa.ResumeLayout(false);
             this.grbPesquisa.PerformLayout();
             this.grbVacina.ResumeLayout(false);
@@ -157,5 +181,7 @@
         private System.Windows.Forms.Label lblDescricao;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnAtualizar;
     }
 }

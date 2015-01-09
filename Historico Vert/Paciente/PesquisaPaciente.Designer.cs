@@ -73,6 +73,7 @@
             this.lblEspecie1 = new System.Windows.Forms.Label();
             this.lbl = new System.Windows.Forms.Label();
             this.lblNomePaciente1 = new System.Windows.Forms.Label();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.grbPesquisa.SuspendLayout();
             this.grbPaciente.SuspendLayout();
             this.SuspendLayout();
@@ -137,6 +138,7 @@
             // 
             // grbPaciente
             // 
+            this.grbPaciente.Controls.Add(this.btnEditar);
             this.grbPaciente.Controls.Add(this.lblEmail2);
             this.grbPaciente.Controls.Add(this.lblEmail1);
             this.grbPaciente.Controls.Add(this.lblTelefone2);
@@ -177,7 +179,7 @@
             this.grbPaciente.Controls.Add(this.lblNomePaciente1);
             this.grbPaciente.Location = new System.Drawing.Point(14, 129);
             this.grbPaciente.Name = "grbPaciente";
-            this.grbPaciente.Size = new System.Drawing.Size(730, 255);
+            this.grbPaciente.Size = new System.Drawing.Size(889, 255);
             this.grbPaciente.TabIndex = 14;
             this.grbPaciente.TabStop = false;
             this.grbPaciente.Text = "Dados Paciente";
@@ -525,6 +527,16 @@
             this.lblNomePaciente1.TabIndex = 0;
             this.lblNomePaciente1.Text = "Nome Paciente:";
             // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(759, 206);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(114, 32);
+            this.btnEditar.TabIndex = 39;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
             // PesquisaPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -532,7 +544,7 @@
             this.Controls.Add(this.grbPaciente);
             this.Controls.Add(this.grbPesquisa);
             this.Name = "PesquisaPaciente";
-            this.Size = new System.Drawing.Size(854, 387);
+            this.Size = new System.Drawing.Size(954, 387);
             this.grbPesquisa.ResumeLayout(false);
             this.grbPesquisa.PerformLayout();
             this.grbPaciente.ResumeLayout(false);
@@ -588,5 +600,6 @@
         private System.Windows.Forms.Label lblEspecie1;
         private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Label lblNomePaciente1;
+        private System.Windows.Forms.Button btnEditar;
     }
 }

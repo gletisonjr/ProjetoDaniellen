@@ -11,9 +11,18 @@ namespace Historico_Vert.Paciente
 {
     public partial class PesquisaPaciente : UserControl
     {
+        private Form1 form;
+
+
         public PesquisaPaciente()
         {
             InitializeComponent();
+        }
+
+        public PesquisaPaciente(Form1 form)
+        {
+            InitializeComponent();
+            this.form = form;
         }
 
         private void btnPesquisa_Click(object sender, EventArgs e)
@@ -29,6 +38,11 @@ namespace Historico_Vert.Paciente
         private void grbPesquisa_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            form.DefineEvent("PacienteNovo","a");
         }
     }
 }

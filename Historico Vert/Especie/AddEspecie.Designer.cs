@@ -77,6 +77,7 @@
             this.btnAcao.TabIndex = 12;
             this.btnAcao.Text = "Cadastrar";
             this.btnAcao.UseVisualStyleBackColor = true;
+            this.btnAcao.Click += new System.EventHandler(this.btnAcao_Click);
             // 
             // txtNome
             // 
@@ -94,12 +95,12 @@
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome:";
             // 
-            // Especie
+            // AddEspecie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.grbEspecie);
-            this.Name = "Especie";
+            this.Name = "AddEspecie";
             this.Size = new System.Drawing.Size(651, 220);
             this.Load += new System.EventHandler(this.Especie_Load);
             this.grbEspecie.ResumeLayout(false);

@@ -47,9 +47,8 @@ namespace Historico_Vert
             control.Show();
         }
 
-        public void DefineEvent(String nome)
+        public void DefineEvent(String nome, Object o)
         {
-            var o = new Object();
             var e = new EventArgs();
             if (nome.Equals("BanhoTosaNovo"))
                 tsmiBanhoTosaNovo_Click(o, e);
@@ -83,6 +82,8 @@ namespace Historico_Vert
                 tsmiVacinaNovo_Click(o, e);
             if (nome.Equals("VacinaPesquisar"))
                 tsmiVacinaPesquisar_Click(o, e);
+            if (nome.Equals("Inicio"))
+                tsmiPrincipal_Click(o, e);
 
         }
 
@@ -90,7 +91,7 @@ namespace Historico_Vert
         public void tsmiProntuarioNovo_Click(object sender, EventArgs e)
         {
             ClearForm();
-            var user = new AddProntuario();
+            var user = new AddProntuario(this);
             Controls.Add(user);
             Show(user);
         }
@@ -98,7 +99,7 @@ namespace Historico_Vert
         private void tsmiProntuarioPesquisar_Click(object sender, EventArgs e)
         {
             ClearForm();
-            var user = new PesquisaProntuario();
+            var user = new PesquisaProntuario(this);
             Controls.Add(user);
             Show(user);
         }
@@ -106,7 +107,9 @@ namespace Historico_Vert
         private void tsmiPacienteNovo_Click(object sender, EventArgs e)
         {
             ClearForm();
-            var paciente = new AddPaciente();
+            var paciente = new AddPaciente(this);
+            if (sender.Equals("a"))
+               paciente.SetbtAcao_Text("Atualizar");
             Controls.Add(paciente);
             Show(paciente);
         }
@@ -114,7 +117,7 @@ namespace Historico_Vert
         private void tsmiPacientePesquisar_Click(object sender, EventArgs e)
         {
             ClearForm();
-            var paciente = new PesquisaPaciente();
+            var paciente = new PesquisaPaciente(this);
             Controls.Add(paciente);
             Show(paciente);
 
@@ -123,7 +126,7 @@ namespace Historico_Vert
         private void tsmiDonoNovo_Click(object sender, EventArgs e)
         {
             ClearForm();
-            var pessoa = new AddPessoa();
+            var pessoa = new AddPessoa(this);
             Controls.Add(pessoa);
             Show(pessoa);
         }
@@ -131,7 +134,7 @@ namespace Historico_Vert
         private void tsmiDonoPesquisar_Click(object sender, EventArgs e)
         {
             ClearForm();
-            var pessoa = new PesquisaPessoa();
+            var pessoa = new PesquisaPessoa(this);
             Controls.Add(pessoa);
             Show(pessoa);
         }
@@ -139,7 +142,7 @@ namespace Historico_Vert
         private void tsmiEspecieNovo_Click(object sender, EventArgs e)
         {
             ClearForm();
-            var especie = new AddEspecie();
+            var especie = new AddEspecie(this);
             Controls.Add(especie);
             Show(especie);
         }
@@ -147,7 +150,7 @@ namespace Historico_Vert
         private void tsmiEspeciePesquisar_Click(object sender, EventArgs e)
         {
             ClearForm();
-            var especie = new PesquisaEspecie();
+            var especie = new PesquisaEspecie(this);
             Controls.Add(especie);
             Show(especie);
         }
@@ -155,7 +158,7 @@ namespace Historico_Vert
         private void tsmiRacaNovo_Click(object sender, EventArgs e)
         {
             ClearForm();
-            var raca = new AddRaca();
+            var raca = new AddRaca(this);
             Controls.Add(raca);
             Show(raca);
         }
@@ -163,7 +166,7 @@ namespace Historico_Vert
         private void tsmiRacaPesquisar_Click(object sender, EventArgs e)
         {
             ClearForm();
-            var raca = new PesquisaRaca();
+            var raca = new PesquisaRaca(this);
             Controls.Add(raca);
             Show(raca);
         }
@@ -171,8 +174,10 @@ namespace Historico_Vert
         private void tsmiMedicoNovo_Click(object sender, EventArgs e)
         {
             ClearForm();
-            var vet = new AddPessoa();
+            var vet = new AddPessoa(this);
             vet.SetGrbPessoaName("Médico Veterinário");
+            if (sender.Equals("a"))
+                vet.SetBtAcao_Text("Atualizar");
             Controls.Add(vet);
             Show(vet);
         }
@@ -180,7 +185,7 @@ namespace Historico_Vert
         private void tsmiMedicoPesquisar_Click(object sender, EventArgs e)
         {
             ClearForm();
-            var vet = new PesquisaPessoa();
+            var vet = new PesquisaPessoa(this);
             vet.PesquisaMedico();
             Controls.Add(vet);
             Show(vet);
@@ -189,7 +194,7 @@ namespace Historico_Vert
         private void tsmiVacinaNovo_Click(object sender, EventArgs e)
         {
             ClearForm();
-            var vacina = new AddVacina();
+            var vacina = new AddVacina(this);
             Controls.Add(vacina);
             Show(vacina);
         }
@@ -197,7 +202,7 @@ namespace Historico_Vert
         private void tsmiVacinaPesquisar_Click(object sender, EventArgs e)
         {
             ClearForm();
-            var vacina = new PesquisaVacina();
+            var vacina = new PesquisaVacina(this);
             Controls.Add(vacina);
             Show(vacina);
         }
@@ -213,7 +218,7 @@ namespace Historico_Vert
         private void tsmiBanhoTosaPesquisar_Click(object sender, EventArgs e)
         {
             ClearForm();
-            var banho = new PesquisaBanhoTosa();
+            var banho = new PesquisaBanhoTosa(this);
             Controls.Add(banho);
             Show(banho);
         }

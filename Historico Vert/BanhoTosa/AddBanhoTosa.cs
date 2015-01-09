@@ -25,5 +25,10 @@ namespace Historico_Vert.BanhoTosa
         {
             dtpData.Enabled = false;
         }
+
+        private void btnAdicionar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hora marcada com Sucesso!", "Marcação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

@@ -11,9 +11,17 @@ namespace Historico_Vert.Pessoa
 {
     public partial class PesquisaPessoa : UserControl
     {
+        private Form1 form;
+
         public PesquisaPessoa()
         {
             InitializeComponent();
+        }
+
+        public PesquisaPessoa(Form1 form)
+        {
+            InitializeComponent();
+            this.form = form;
         }
 
         public void PesquisaMedico()
@@ -29,6 +37,14 @@ namespace Historico_Vert.Pessoa
         private void btnPesquisa_Click(object sender, EventArgs e)
         {
             grbPessoa.Visible = true;
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (grbPesquisa.Text.Equals("Pesquisa Médico"))
+                form.DefineEvent("MedicoNovo", "a");
+            else
+                form.DefineEvent("DonoNovo", "a");
         }
     }
 }
