@@ -50,5 +50,10 @@ namespace Historico_Vert.BanhoTosa
             form.DefineEvent("BanhoTosaNovo", "a");
         }
 
+        private void dtgvProntuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
     }
 }

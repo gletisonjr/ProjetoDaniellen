@@ -42,9 +42,9 @@ namespace Historico_Vert.Pessoa
         private void btnEditar_Click(object sender, EventArgs e)
         {
             if (grbPesquisa.Text.Equals("Pesquisa Médico"))
-                form.DefineEvent("MedicoNovo", "a");
+                form.DefineEvent("MedicoNovo", new Data.Pessoa());
             else
-                form.DefineEvent("DonoNovo", "a");
+                form.DefineEvent("DonoNovo", new Data.Pessoa());
         }
     }
 }

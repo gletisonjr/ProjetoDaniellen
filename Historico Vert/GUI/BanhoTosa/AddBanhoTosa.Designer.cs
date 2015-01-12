@@ -42,11 +42,15 @@
             this.rbtnBanhoTosa = new System.Windows.Forms.RadioButton();
             this.rbtnBanho = new System.Windows.Forms.RadioButton();
             this.rbtnTosa = new System.Windows.Forms.RadioButton();
+            this.lblHorario = new System.Windows.Forms.Label();
+            this.txtHorario = new System.Windows.Forms.MaskedTextBox();
             this.grbAddBanhoTosa.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbAddBanhoTosa
             // 
+            this.grbAddBanhoTosa.Controls.Add(this.txtHorario);
+            this.grbAddBanhoTosa.Controls.Add(this.lblHorario);
             this.grbAddBanhoTosa.Controls.Add(this.btnAdicionar);
             this.grbAddBanhoTosa.Controls.Add(this.lblServico);
             this.grbAddBanhoTosa.Controls.Add(this.rbtnOutro);
@@ -62,14 +66,14 @@
             this.grbAddBanhoTosa.Controls.Add(this.rbtnTosa);
             this.grbAddBanhoTosa.Location = new System.Drawing.Point(15, 13);
             this.grbAddBanhoTosa.Name = "grbAddBanhoTosa";
-            this.grbAddBanhoTosa.Size = new System.Drawing.Size(482, 240);
+            this.grbAddBanhoTosa.Size = new System.Drawing.Size(469, 303);
             this.grbAddBanhoTosa.TabIndex = 0;
             this.grbAddBanhoTosa.TabStop = false;
             this.grbAddBanhoTosa.Text = "Banho&&Tosa";
             // 
             // btnAdicionar
             // 
-            this.btnAdicionar.Location = new System.Drawing.Point(349, 185);
+            this.btnAdicionar.Location = new System.Drawing.Point(348, 245);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(109, 41);
             this.btnAdicionar.TabIndex = 37;
@@ -191,6 +195,23 @@
             this.rbtnTosa.Text = "Tosa";
             this.rbtnTosa.UseVisualStyleBackColor = true;
             // 
+            // lblHorario
+            // 
+            this.lblHorario.AutoSize = true;
+            this.lblHorario.Location = new System.Drawing.Point(16, 227);
+            this.lblHorario.Name = "lblHorario";
+            this.lblHorario.Size = new System.Drawing.Size(44, 13);
+            this.lblHorario.TabIndex = 38;
+            this.lblHorario.Text = "Horário:";
+            // 
+            // txtHorario
+            // 
+            this.txtHorario.Location = new System.Drawing.Point(42, 256);
+            this.txtHorario.Mask = "#0 : 00";
+            this.txtHorario.Name = "txtHorario";
+            this.txtHorario.Size = new System.Drawing.Size(244, 20);
+            this.txtHorario.TabIndex = 39;
+            // 
             // AddBanhoTosa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -220,5 +241,7 @@
         private System.Windows.Forms.DateTimePicker dtpData;
         private System.Windows.Forms.Label lblData;
         private System.Windows.Forms.Button btnAdicionar;
+        private System.Windows.Forms.MaskedTextBox txtHorario;
+        private System.Windows.Forms.Label lblHorario;
     }
 }
