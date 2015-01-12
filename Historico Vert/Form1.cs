@@ -127,6 +127,11 @@ namespace Historico_Vert
         {
             ClearForm();
             var pessoa = new AddPessoa(this);
+            if (sender is Data.Pessoa)
+            {
+                pessoa.SetBtAcao_Text("Atualizar");
+                pessoa.pessoa = (Data.Pessoa)sender;
+            }
             Controls.Add(pessoa);
             Show(pessoa);
         }
@@ -175,9 +180,12 @@ namespace Historico_Vert
         {
             ClearForm();
             var vet = new AddPessoa(this);
-            vet.SetGrbPessoaName("Médico Veterinário");
-            if (sender.Equals("a"))
+            vet.SetGrbPessoaName("Dados do Médico Veterinário");
+            if (sender is Data.Pessoa)
+            {
                 vet.SetBtAcao_Text("Atualizar");
+                vet.pessoa = (Data.Pessoa) sender;
+            }
             Controls.Add(vet);
             Show(vet);
         }

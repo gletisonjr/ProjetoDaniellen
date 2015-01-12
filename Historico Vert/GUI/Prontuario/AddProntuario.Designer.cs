@@ -615,7 +615,7 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(1105, 144);
+            this.btnSalvar.Location = new System.Drawing.Point(1105, 181);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(112, 31);
             this.btnSalvar.TabIndex = 16;
@@ -625,7 +625,7 @@
             // 
             // btnImprimir
             // 
-            this.btnImprimir.Location = new System.Drawing.Point(1105, 107);
+            this.btnImprimir.Location = new System.Drawing.Point(1105, 144);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(112, 31);
             this.btnImprimir.TabIndex = 13;

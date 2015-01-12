@@ -82,11 +82,12 @@
             this.dtpDataInicial = new System.Windows.Forms.DateTimePicker();
             this.lblDataInicial = new System.Windows.Forms.Label();
             this.grbBanhoTosa = new System.Windows.Forms.GroupBox();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.dtgvProntuarios = new System.Windows.Forms.DataGridView();
             this.data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.horario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.banho = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tosa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnEditar = new System.Windows.Forms.Button();
             this.grbPesquisa.SuspendLayout();
             this.grbPaciente.SuspendLayout();
             this.grbPeriodo.SuspendLayout();
@@ -637,6 +638,16 @@
             this.grbBanhoTosa.Text = "Banhos e Tosas";
             this.grbBanhoTosa.Visible = false;
             // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(510, 150);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(114, 32);
+            this.btnEditar.TabIndex = 28;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
             // dtgvProntuarios
             // 
             this.dtgvProntuarios.AllowUserToOrderColumns = true;
@@ -644,18 +655,25 @@
             this.dtgvProntuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvProntuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.data,
+            this.horario,
             this.banho,
             this.tosa});
             this.dtgvProntuarios.Location = new System.Drawing.Point(11, 19);
             this.dtgvProntuarios.Name = "dtgvProntuarios";
             this.dtgvProntuarios.Size = new System.Drawing.Size(485, 331);
             this.dtgvProntuarios.TabIndex = 10;
+            this.dtgvProntuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvProntuarios_CellContentClick);
             // 
             // data
             // 
             this.data.HeaderText = "Data";
             this.data.Name = "data";
             this.data.ReadOnly = true;
+            // 
+            // horario
+            // 
+            this.horario.HeaderText = "Horario";
+            this.horario.Name = "horario";
             // 
             // banho
             // 
@@ -668,16 +686,6 @@
             this.tosa.HeaderText = "Tosa";
             this.tosa.Name = "tosa";
             this.tosa.ReadOnly = true;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Location = new System.Drawing.Point(510, 150);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(114, 32);
-            this.btnEditar.TabIndex = 28;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // PesquisaBanhoTosa
             // 
@@ -758,9 +766,10 @@
         private System.Windows.Forms.Label lblDataInicial;
         private System.Windows.Forms.GroupBox grbBanhoTosa;
         private System.Windows.Forms.DataGridView dtgvProntuarios;
+        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.DataGridViewTextBoxColumn data;
+        private System.Windows.Forms.DataGridViewTextBoxColumn horario;
         private System.Windows.Forms.DataGridViewTextBoxColumn banho;
         private System.Windows.Forms.DataGridViewTextBoxColumn tosa;
-        private System.Windows.Forms.Button btnEditar;
     }
 }

@@ -87,7 +87,7 @@
             this.grbPessoa.Size = new System.Drawing.Size(784, 299);
             this.grbPessoa.TabIndex = 1;
             this.grbPessoa.TabStop = false;
-            this.grbPessoa.Text = "Dono";
+            this.grbPessoa.Text = "Dados do Dono";
             // 
             // btAcao
             // 
@@ -245,7 +245,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(97, 250);
+            this.txtEmail.Location = new System.Drawing.Point(79, 250);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(273, 20);
             this.txtEmail.TabIndex = 13;
@@ -253,7 +253,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(38, 250);
+            this.lblEmail.Location = new System.Drawing.Point(20, 250);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(35, 13);
             this.lblEmail.TabIndex = 12;
@@ -261,7 +261,7 @@
             // 
             // txtTelefone
             // 
-            this.txtTelefone.Location = new System.Drawing.Point(97, 215);
+            this.txtTelefone.Location = new System.Drawing.Point(79, 215);
             this.txtTelefone.Mask = "(00) 0000-0000#";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(100, 20);
@@ -271,7 +271,7 @@
             // 
             this.label1.AccessibleDescription = "lblTelefone";
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 215);
+            this.label1.Location = new System.Drawing.Point(20, 215);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 10;
