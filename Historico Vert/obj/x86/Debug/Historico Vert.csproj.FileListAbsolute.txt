@@ -75,3 +75,4 @@ D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\R
 D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\RdlCompile.compiled
 D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.exe
 D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.pdb
+C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.exe.config
