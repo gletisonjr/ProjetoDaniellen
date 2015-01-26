@@ -1,0 +1,10 @@
+-- Script Date: 23/01/2015 15:30  - ErikEJ.SqlCeScripting version 3.5.2.43
+CREATE TABLE [EnderecoPessoa] (
+  [idPessoa] int NOT NULL
+, [idEndereco] int NOT NULL
+, [numero] int NOT NULL
+, [complemento] nvarchar(50) NOT NULL
+, CONSTRAINT [PK_EnderecoPessoa] PRIMARY KEY (idPessoa,idEndereco)
+, CONSTRAINT [FK_EnderecoPessoa_Pessoa] FOREIGN KEY([idPessoa]) REFERENCES [Pessoa](id)
+, CONSTRAINT [FK_EnderecoPessoa_Endereco] FOREIGN KEY([idEndereco]) REFERENCES [Endereco](id)
+);

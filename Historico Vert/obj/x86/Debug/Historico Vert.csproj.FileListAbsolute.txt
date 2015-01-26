@@ -75,3 +75,15 @@ D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\R
 D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\RdlCompile.compiled
 D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.exe
 D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.pdb
+<<<<<<< HEAD
+D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.exe.config
+D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.dll
+D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.xml
+D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.SqlServer.xml
+=======
+C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.exe.config
+>>>>>>> origin/master
+D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.SqlServerCompact.dll
+D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\System.Data.SqlServerCe.dll
+D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.SqlServerCompact.xml

@@ -1,0 +1,10 @@
+-- Script Date: 23/01/2015 15:30  - ErikEJ.SqlCeScripting version 3.5.2.43
+CREATE TABLE [Endereco] (
+  [id] int IDENTITY (1,1) NOT NULL
+, [rua] nvarchar(50) NOT NULL
+, [bairro] nvarchar(50) NOT NULL
+, [cidade] nvarchar(50) NOT NULL
+, [estado] nvarchar(10)
+, [cep] int
+, CONSTRAINT [PK_Endereco] PRIMARY KEY ([id])
+);

@@ -1,0 +1,9 @@
+-- Script Date: 23/01/2015 15:30  - ErikEJ.SqlCeScripting version 3.5.2.43
+CREATE TABLE [Raca] (
+  [id] int IDENTITY (1,1) NOT NULL
+, [idEspecie] int NOT NULL
+, [nome] nvarchar(50) NOT NULL
+, [descricao] nvarchar(50)
+, CONSTRAINT [PK_Raca] PRIMARY KEY ([id])
+, CONSTRAINT [FK_Raca_Especie] FOREIGN KEY([idEspecie]) REFERENCES [Especie](id)
+);

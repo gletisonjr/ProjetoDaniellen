@@ -1,0 +1,7 @@
+-- Script Date: 23/01/2015 15:57  - ErikEJ.SqlCeScripting version 3.5.2.43
+CREATE TABLE [Cliente] (
+  [id] int IDENTITY (1,1) NOT NULL
+, [idPessoa] int NOT NULL
+,CONSTRAINT [PK_Cliente] PRIMARY KEY ([id])
+,CONSTRAINT [FR_Cliente_Pessoa] FOREIGN KEY (idPessoa) REFERENCES [Pessoa](Id)
+);

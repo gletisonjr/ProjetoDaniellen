@@ -1,0 +1,8 @@
+-- Script Date: 23/01/2015 15:30  - ErikEJ.SqlCeScripting version 3.5.2.43
+CREATE TABLE [Medico] (
+  [id] int IDENTITY (1,1) NOT NULL
+, [idPessoa] int NOT NULL
+, [crmv] nvarchar(50) UNIQUE NOT NULL
+, CONSTRAINT [PK_Medico] PRIMARY KEY ([id])
+, CONSTRAINT [FK_Medico_Pessoa] FOREIGN KEY([idPessoa]) REFERENCES [Pessoa(id)]
+);

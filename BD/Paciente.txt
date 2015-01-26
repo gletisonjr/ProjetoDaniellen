@@ -1,0 +1,13 @@
+-- Script Date: 23/01/2015 15:30  - ErikEJ.SqlCeScripting version 3.5.2.43
+CREATE TABLE [Paciente] (
+  [id] int IDENTITY (1,1) NOT NULL
+, [idRaca] int NOT NULL
+, [idCliente] int NOT NULL
+, [nome] nvarchar(50) NOT NULL
+, [cor] nvarchar(10)
+, [dataNascimento] datetime
+, [dataEntrada] datetime
+, CONSTRAINT [PK_Paciente] PRIMARY KEY ([id])
+, CONSTRAINT [FK_Paciente_Cliente] FOREIGN KEY([idCliente]) REFERENCES [Cliente](id)
+, CONSTRAINT [FK_Paciente_Raca] FOREIGN KEY([idRaca]) REFERENCES [Raca](id)
+);
