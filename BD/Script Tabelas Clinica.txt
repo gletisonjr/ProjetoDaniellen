@@ -1,0 +1,103 @@
+-- Script Date: 23/01/2015 15:30  - ErikEJ.SqlCeScripting version 3.5.2.43
+CREATE TABLE [Endereco] (
+  [id] int IDENTITY (1,1) NOT NULL
+, [rua] nvarchar(50) NOT NULL
+, [bairro] nvarchar(50) NOT NULL
+, [cidade] nvarchar(50) NOT NULL
+, [estado] nvarchar(10)
+, [cep] int
+, CONSTRAINT [PK_Endereco] PRIMARY KEY ([id])
+);
+
+CREATE TABLE [Pessoa] (
+  [id] int IDENTITY (1,1) NOT NULL
+, [nome] nvarchar(50) NOT NULL
+, [telefone] nvarchar(50) NOT NULL
+, [email] nvarchar(50) NOT NULL
+, CONSTRAINT [PK_Pessoa] PRIMARY KEY ([id])
+);
+
+CREATE TABLE [Cliente] (
+  [id] int IDENTITY (1,1) NOT NULL
+, [idPessoa] int NOT NULL
+,CONSTRAINT [PK_Cliente] PRIMARY KEY ([id])
+,CONSTRAINT [FR_Cliente_Pessoa] FOREIGN KEY (idPessoa) REFERENCES [Pessoa](Id)
+);
+
+CREATE TABLE [Medico] (
+  [id] int IDENTITY (1,1) NOT NULL
+, [idPessoa] int NOT NULL
+, [crmv] nvarchar(50) UNIQUE NOT NULL
+, CONSTRAINT [PK_Medico] PRIMARY KEY ([id])
+, CONSTRAINT [FK_Medico_Pessoa] FOREIGN KEY([idPessoa]) REFERENCES [Pessoa](id)
+);
+
+CREATE TABLE [EnderecoPessoa] (
+  [idPessoa] int IDENTITY (1,1) NOT NULL
+, [idEndereco] int NOT NULL
+, [numero] int NOT NULL
+, [complemento] nvarchar(50) NOT NULL
+, CONSTRAINT [PK_EnderecoPessoa] PRIMARY KEY (idPessoa,idEndereco)
+, CONSTRAINT [FK_EnderecoPessoa_Pessoa] FOREIGN KEY([idPessoa]) REFERENCES [Pessoa](id)
+, CONSTRAINT [FK_EnderecoPessoa_Endereco] FOREIGN KEY([idEndereco]) REFERENCES [Endereco](id)
+);
+
+CREATE TABLE [Especie] (
+  [id] int IDENTITY (1,1) NOT NULL
+, [nome] int NOT NULL
+, [descricao] nvarchar(50)
+,CONSTRAINT [PK_Especie] PRIMARY KEY ([id])
+);
+
+CREATE TABLE [Raca] (
+  [id] int IDENTITY (1,1) NOT NULL
+, [idEspecie] int NOT NULL
+, [nome] nvarchar(50) NOT NULL
+, [descricao] nvarchar(50)
+, CONSTRAINT [PK_Raca] PRIMARY KEY ([id])
+, CONSTRAINT [FK_Raca_Especie] FOREIGN KEY([idEspecie]) REFERENCES [Especie](id)
+);
+
+CREATE TABLE [Paciente] (
+  [id] int IDENTITY (1,1) NOT NULL
+, [idRaca] int NOT NULL
+, [idCliente] int NOT NULL
+, [nome] nvarchar(50) NOT NULL
+, [cor] nvarchar(10)
+, [dataNascimento] datetime
+, [dataEntrada] datetime
+, CONSTRAINT [PK_Paciente] PRIMARY KEY ([id])
+, CONSTRAINT [FK_Paciente_Cliente] FOREIGN KEY([idCliente]) REFERENCES [Cliente](id)
+, CONSTRAINT [FK_Paciente_Raca] FOREIGN KEY([idRaca]) REFERENCES [Raca](id)
+);
+
+CREATE TABLE [BanhoTosa] (
+  [id] int IDENTITY (1,1) NOT NULL
+, [idPaciente] int NOT NULL
+, [banho] bit NOT NULL
+, [tosa] bit NOT NULL
+, [diaHora] datetime
+, CONSTRAINT [PK_BanhoTosa] PRIMARY KEY ([id])
+, CONSTRAINT [FK_BanhoTosa_Paciente] FOREIGN KEY([idPaciente]) REFERENCES [Paciente](id)
+);
+
+CREATE TABLE [Prontuario] (
+  [id] int IDENTITY (1,1) NOT NULL
+, [idPaciente] int NOT NULL
+, [idMedico] int NOT NULL
+, [texto] nvarchar(50) NOT NULL
+, [expressaoChave] nvarchar(10)
+, [data] datetime
+, CONSTRAINT [PK_Prontuario] PRIMARY KEY ([id])
+, CONSTRAINT [FK_Prontuario_Paciente] FOREIGN KEY([idPaciente]) REFERENCES [Paciente](id)
+, CONSTRAINT [FK_Prontuario_Medico] FOREIGN KEY([idMedico]) REFERENCES [Medico](id)
+);
+
+CREATE TABLE [Vacina] (
+  [id] int IDENTITY (1,1) NOT NULL
+, [nome] nvarchar(20) NOT NULL
+, [duracao] int NOT NULL
+, [tempo] nvarchar(50) NOT NULL
+, [descricao] nvarchar(10)
+, CONSTRAINT [PK_Vacina] PRIMARY KEY ([id])
+);
