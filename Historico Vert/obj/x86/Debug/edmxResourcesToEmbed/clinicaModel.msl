@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="clinicaModelModelStoreContainer" CdmEntityContainer="clinicaModelEntities">
+    <EntitySetMapping Name="BanhoTosa">
+      <EntityTypeMapping TypeName="clinicaModelModel.BanhoTosa">
+        <MappingFragment StoreEntitySet="BanhoTosa">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
+          <ScalarProperty Name="banho" ColumnName="banho" />
+          <ScalarProperty Name="tosa" ColumnName="tosa" />
+          <ScalarProperty Name="diaHora" ColumnName="diaHora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Endereco">
+      <EntityTypeMapping TypeName="clinicaModelModel.Endereco">
+        <MappingFragment StoreEntitySet="Endereco">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="rua" ColumnName="rua" />
+          <ScalarProperty Name="bairro" ColumnName="bairro" />
+          <ScalarProperty Name="cidade" ColumnName="cidade" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="cep" ColumnName="cep" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnderecoPessoa">
+      <EntityTypeMapping TypeName="clinicaModelModel.EnderecoPessoa">
+        <MappingFragment StoreEntitySet="EnderecoPessoa">
+          <ScalarProperty Name="idPessoa" ColumnName="idPessoa" />
+          <ScalarProperty Name="idEndereco" ColumnName="idEndereco" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="complemento" ColumnName="complemento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Especie">
+      <EntityTypeMapping TypeName="clinicaModelModel.Especie">
+        <MappingFragment StoreEntitySet="Especie">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Medico">
+      <EntityTypeMapping TypeName="clinicaModelModel.Medico">
+        <MappingFragment StoreEntitySet="Medico">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idPessoa" ColumnName="idPessoa" />
+          <ScalarProperty Name="crmv" ColumnName="crmv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paciente">
+      <EntityTypeMapping TypeName="clinicaModelModel.Paciente">
+        <MappingFragment StoreEntitySet="Paciente">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idRaca" ColumnName="idRaca" />
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="cor" ColumnName="cor" />
+          <ScalarProperty Name="dataNascimento" ColumnName="dataNascimento" />
+          <ScalarProperty Name="dataEntrada" ColumnName="dataEntrada" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pessoa">
+      <EntityTypeMapping TypeName="IsTypeOf(clinicaModelModel.Pessoa)">
+        <MappingFragment StoreEntitySet="Pessoa">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="telefone" ColumnName="telefone" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prontuario">
+      <EntityTypeMapping TypeName="clinicaModelModel.Prontuario">
+        <MappingFragment StoreEntitySet="Prontuario">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
+          <ScalarProperty Name="idMedico" ColumnName="idMedico" />
+          <ScalarProperty Name="texto" ColumnName="texto" />
+          <ScalarProperty Name="expressaoChave" ColumnName="expressaoChave" />
+          <ScalarProperty Name="data" ColumnName="data" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Raca">
+      <EntityTypeMapping TypeName="clinicaModelModel.Raca">
+        <MappingFragment StoreEntitySet="Raca">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idEspecie" ColumnName="idEspecie" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vacina">
+      <EntityTypeMapping TypeName="clinicaModelModel.Vacina">
+        <MappingFragment StoreEntitySet="Vacina">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="duracao" ColumnName="duracao" />
+          <ScalarProperty Name="tempo" ColumnName="tempo" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClienteSet">
+      <EntityTypeMapping TypeName="IsTypeOf(clinicaModelModel.Cliente)" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <MappingFragment StoreEntitySet="Cliente">
+          <ScalarProperty Name="idPessoa" ColumnName="idPessoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
