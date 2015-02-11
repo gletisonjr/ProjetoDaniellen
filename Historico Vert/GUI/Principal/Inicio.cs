@@ -6,13 +6,13 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Historico_Vert.GUI.Pessoa;
-using Historico_Vert.GUI.Prontuario;
-using Historico_Vert.GUI.Paciente;
+//using Historico_Vert.GUI.Pessoa;
+//using Historico_Vert.GUI.Prontuario;
+//using Historico_Vert.GUI.Paciente;
 using Historico_Vert.GUI.Especie;
-using Historico_Vert.GUI.Raca;
-using Historico_Vert.GUI.Vacina;
-using Historico_Vert.GUI.BanhoTosa;
+//using Historico_Vert.GUI.Raca;
+//using Historico_Vert.GUI.Vacina;
+//using Historico_Vert.GUI.BanhoTosa;
 using Historico_Vert.GUI.Principal;
 
 

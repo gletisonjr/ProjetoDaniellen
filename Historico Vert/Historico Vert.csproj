@@ -99,51 +99,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clinicaModel.Designer.cs">
+    <Compile Include="Data\clinica.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>clinicaModel.edmx</DependentUpon>
+      <DependentUpon>clinica.edmx</DependentUpon>
     </Compile>
     <Compile Include="DAO\Connection.cs" />
-    <Compile Include="Data\BanhoTosa.cs" />
-    <Compile Include="Data\Cliente.cs" />
-    <Compile Include="Data\Endereco.cs" />
-    <Compile Include="Data\Especie.cs" />
-    <Compile Include="Data\Medico.cs" />
-    <Compile Include="Data\Paciente.cs" />
-    <Compile Include="Data\Pessoa.cs" />
-    <Compile Include="Data\Prontuario.cs" />
-    <Compile Include="Data\Raca.cs" />
-    <Compile Include="Data\Vacina.cs" />
-    <Compile Include="GUI\BanhoTosa\AddBanhoTosa.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\BanhoTosa\AddBanhoTosa.Designer.cs">
-      <DependentUpon>AddBanhoTosa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\BanhoTosa\PesquisaBanhoTosa.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\BanhoTosa\PesquisaBanhoTosa.Designer.cs">
-      <DependentUpon>PesquisaBanhoTosa.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Data\DataContext.cs" />
     <Compile Include="Configuracoes\Configuracoes.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Configuracoes\Configuracoes.Designer.cs">
       <DependentUpon>Configuracoes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Especie\PesquisaEspecie.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\Especie\PesquisaEspecie.Designer.cs">
-      <DependentUpon>PesquisaEspecie.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Paciente\AddPaciente.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\Paciente\AddPaciente.Designer.cs">
-      <DependentUpon>AddPaciente.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Especie\AddEspecie.cs">
       <SubType>UserControl</SubType>
@@ -151,29 +118,17 @@
     <Compile Include="GUI\Especie\AddEspecie.Designer.cs">
       <DependentUpon>AddEspecie.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Especie\PesquisaEspecie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Especie\PesquisaEspecie.Designer.cs">
+      <DependentUpon>PesquisaEspecie.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Paciente\PesquisaPaciente.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\Paciente\PesquisaPaciente.Designer.cs">
-      <DependentUpon>PesquisaPaciente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Pessoa\AddPessoa.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\Pessoa\AddPessoa.Designer.cs">
-      <DependentUpon>AddPessoa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Pessoa\PesquisaPessoa.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\Pessoa\PesquisaPessoa.Designer.cs">
-      <DependentUpon>PesquisaPessoa.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Principal\Inicio.cs">
       <SubType>UserControl</SubType>
@@ -181,86 +136,22 @@
     <Compile Include="GUI\Principal\Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Prontuario\AddProntuario.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\Prontuario\AddProntuario.Designer.cs">
-      <DependentUpon>AddProntuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Raca\PesquisaRaca.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\Raca\PesquisaRaca.Designer.cs">
-      <DependentUpon>PesquisaRaca.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Vacina\AddVacina.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\Vacina\AddVacina.Designer.cs">
-      <DependentUpon>AddVacina.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GUI\Prontuario\PesquisaProntuario.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\Prontuario\PesquisaProntuario.Designer.cs">
-      <DependentUpon>PesquisaProntuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Raca\AddRaca.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\Raca\AddRaca.Designer.cs">
-      <DependentUpon>AddRaca.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Vacina\PesquisaVacina.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\Vacina\PesquisaVacina.Designer.cs">
-      <DependentUpon>PesquisaVacina.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="GUI\BanhoTosa\AddBanhoTosa.resx">
-      <DependentUpon>AddBanhoTosa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\BanhoTosa\PesquisaBanhoTosa.resx">
-      <DependentUpon>PesquisaBanhoTosa.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Configuracoes\Configuracoes.resx">
       <DependentUpon>Configuracoes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Especie\PesquisaEspecie.resx">
-      <DependentUpon>PesquisaEspecie.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Paciente\AddPaciente.resx">
-      <DependentUpon>AddPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Especie\AddEspecie.resx">
       <DependentUpon>AddEspecie.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Especie\PesquisaEspecie.resx">
+      <DependentUpon>PesquisaEspecie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Paciente\PesquisaPaciente.resx">
-      <DependentUpon>PesquisaPaciente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Pessoa\AddPessoa.resx">
-      <DependentUpon>AddPessoa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Pessoa\PesquisaPessoa.resx">
-      <DependentUpon>PesquisaPessoa.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Principal\Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Prontuario\AddProntuario.resx">
-      <DependentUpon>AddProntuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Prontuario\prontuario.rdlc" />
-    <EmbeddedResource Include="GUI\Raca\PesquisaRaca.resx">
-      <DependentUpon>PesquisaRaca.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Vacina\AddVacina.resx">
-      <DependentUpon>AddVacina.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -271,23 +162,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="GUI\Prontuario\PesquisaProntuario.resx">
-      <DependentUpon>PesquisaProntuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Raca\AddRaca.resx">
-      <DependentUpon>AddRaca.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Vacina\PesquisaVacina.resx">
-      <DependentUpon>PesquisaVacina.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="app.config">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="App.config" />
-    <EntityDeploy Include="clinicaModel.edmx">
+    <EntityDeploy Include="Data\clinica.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>clinicaModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>clinica.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="App.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>

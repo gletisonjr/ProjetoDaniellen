@@ -19,52 +19,52 @@ using System.Xml.Serialization;
 [assembly: EdmSchemaAttribute()]
 #region Metadados de Relação EDM
 
-[assembly: EdmRelationshipAttribute("clinicaModelModel", "FK_BanhoTosa_Paciente", "Paciente", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Paciente), "BanhoTosa", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.BanhoTosa), true)]
-[assembly: EdmRelationshipAttribute("clinicaModelModel", "FK_Paciente_Cliente", "Cliente", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Cliente), "Paciente", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.Paciente), true)]
-[assembly: EdmRelationshipAttribute("clinicaModelModel", "FR_Cliente_Pessoa", "Pessoa", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Pessoa), "Cliente", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.Cliente), true)]
-[assembly: EdmRelationshipAttribute("clinicaModelModel", "FK_EnderecoPessoa_Endereco", "Endereco", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Endereco), "EnderecoPessoa", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.EnderecoPessoa), true)]
-[assembly: EdmRelationshipAttribute("clinicaModelModel", "FK_EnderecoPessoa_Pessoa", "Pessoa", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Pessoa), "EnderecoPessoa", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.EnderecoPessoa), true)]
-[assembly: EdmRelationshipAttribute("clinicaModelModel", "FK_Raca_Especie", "Especie", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Especie), "Raca", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.Raca), true)]
-[assembly: EdmRelationshipAttribute("clinicaModelModel", "FK_Medico_Pessoa", "Pessoa", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Pessoa), "Medico", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.Medico), true)]
-[assembly: EdmRelationshipAttribute("clinicaModelModel", "FK_Prontuario_Medico", "Medico", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Medico), "Prontuario", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.Prontuario), true)]
-[assembly: EdmRelationshipAttribute("clinicaModelModel", "FK_Paciente_Raca", "Raca", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Raca), "Paciente", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.Paciente), true)]
-[assembly: EdmRelationshipAttribute("clinicaModelModel", "FK_Prontuario_Paciente", "Paciente", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Paciente), "Prontuario", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.Prontuario), true)]
+[assembly: EdmRelationshipAttribute("clinicaModel", "FK_BanhoTosa_Paciente", "Paciente", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Data.Paciente), "BanhoTosa", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.Data.BanhoTosa), true)]
+[assembly: EdmRelationshipAttribute("clinicaModel", "FK_Paciente_Cliente", "Cliente", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Data.Cliente), "Paciente", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.Data.Paciente), true)]
+[assembly: EdmRelationshipAttribute("clinicaModel", "FR_Cliente_Pessoa", "Pessoa", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Data.Pessoa), "Cliente", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.Data.Cliente), true)]
+[assembly: EdmRelationshipAttribute("clinicaModel", "FK_EnderecoPessoa_Endereco", "Endereco", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Data.Endereco), "EnderecoPessoa", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.Data.EnderecoPessoa), true)]
+[assembly: EdmRelationshipAttribute("clinicaModel", "FK_EnderecoPessoa_Pessoa", "Pessoa", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Data.Pessoa), "EnderecoPessoa", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.Data.EnderecoPessoa), true)]
+[assembly: EdmRelationshipAttribute("clinicaModel", "FK_Raca_Especie", "Especie", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Data.Especie), "Raca", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.Data.Raca), true)]
+[assembly: EdmRelationshipAttribute("clinicaModel", "FK_Medico_Pessoa", "Pessoa", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Data.Pessoa), "Medico", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.Data.Medico), true)]
+[assembly: EdmRelationshipAttribute("clinicaModel", "FK_Prontuario_Medico", "Medico", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Data.Medico), "Prontuario", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.Data.Prontuario), true)]
+[assembly: EdmRelationshipAttribute("clinicaModel", "FK_Paciente_Raca", "Raca", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Data.Raca), "Paciente", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.Data.Paciente), true)]
+[assembly: EdmRelationshipAttribute("clinicaModel", "FK_Prontuario_Paciente", "Paciente", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Historico_Vert.Data.Paciente), "Prontuario", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Historico_Vert.Data.Prontuario), true)]
 
 #endregion
 
-namespace Historico_Vert
+namespace Historico_Vert.Data
 {
     #region Contextos
     
     /// <summary>
     /// Nenhuma Documentação de Metadados disponível.
     /// </summary>
-    public partial class clinicaModelEntities : ObjectContext
+    public partial class clinicaEntities : ObjectContext
     {
         #region Construtores
     
         /// <summary>
-        /// Inicializa um novo objeto clinicaModelEntities usando a cadeia de conexão localizada na seção 'clinicaModelEntities' do arquivo de configuração do aplicativo.
+        /// Inicializa um novo objeto clinicaEntities usando a cadeia de conexão localizada na seção 'clinicaEntities' do arquivo de configuração do aplicativo.
         /// </summary>
-        public clinicaModelEntities() : base("name=clinicaModelEntities", "clinicaModelEntities")
+        public clinicaEntities() : base("name=clinicaEntities", "clinicaEntities")
         {
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
     
         /// <summary>
-        /// Inicialize um novo objeto clinicaModelEntities.
+        /// Inicialize um novo objeto clinicaEntities.
         /// </summary>
-        public clinicaModelEntities(string connectionString) : base(connectionString, "clinicaModelEntities")
+        public clinicaEntities(string connectionString) : base(connectionString, "clinicaEntities")
         {
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
     
         /// <summary>
-        /// Inicialize um novo objeto clinicaModelEntities.
+        /// Inicialize um novo objeto clinicaEntities.
         /// </summary>
-        public clinicaModelEntities(EntityConnection connection) : base(connection, "clinicaModelEntities")
+        public clinicaEntities(EntityConnection connection) : base(connection, "clinicaEntities")
         {
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
@@ -359,7 +359,7 @@ namespace Historico_Vert
     /// <summary>
     /// Nenhuma Documentação de Metadados disponível.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="clinicaModelModel", Name="BanhoTosa")]
+    [EdmEntityTypeAttribute(NamespaceName="clinicaModel", Name="BanhoTosa")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
     public partial class BanhoTosa : EntityObject
@@ -521,16 +521,16 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FK_BanhoTosa_Paciente", "Paciente")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FK_BanhoTosa_Paciente", "Paciente")]
         public Paciente Paciente
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Paciente>("clinicaModelModel.FK_BanhoTosa_Paciente", "Paciente").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Paciente>("clinicaModel.FK_BanhoTosa_Paciente", "Paciente").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Paciente>("clinicaModelModel.FK_BanhoTosa_Paciente", "Paciente").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Paciente>("clinicaModel.FK_BanhoTosa_Paciente", "Paciente").Value = value;
             }
         }
         /// <summary>
@@ -542,13 +542,13 @@ namespace Historico_Vert
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Paciente>("clinicaModelModel.FK_BanhoTosa_Paciente", "Paciente");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Paciente>("clinicaModel.FK_BanhoTosa_Paciente", "Paciente");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Paciente>("clinicaModelModel.FK_BanhoTosa_Paciente", "Paciente", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Paciente>("clinicaModel.FK_BanhoTosa_Paciente", "Paciente", value);
                 }
             }
         }
@@ -560,7 +560,7 @@ namespace Historico_Vert
     /// <summary>
     /// Nenhuma Documentação de Metadados disponível.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="clinicaModelModel", Name="Cliente")]
+    [EdmEntityTypeAttribute(NamespaceName="clinicaModel", Name="Cliente")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
     public partial class Cliente : EntityObject
@@ -646,18 +646,18 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FK_Paciente_Cliente", "Paciente")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FK_Paciente_Cliente", "Paciente")]
         public EntityCollection<Paciente> Paciente
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Paciente>("clinicaModelModel.FK_Paciente_Cliente", "Paciente");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Paciente>("clinicaModel.FK_Paciente_Cliente", "Paciente");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Paciente>("clinicaModelModel.FK_Paciente_Cliente", "Paciente", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Paciente>("clinicaModel.FK_Paciente_Cliente", "Paciente", value);
                 }
             }
         }
@@ -668,16 +668,16 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FR_Cliente_Pessoa", "Pessoa")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FR_Cliente_Pessoa", "Pessoa")]
         public Pessoa Pessoa
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Pessoa>("clinicaModelModel.FR_Cliente_Pessoa", "Pessoa").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Pessoa>("clinicaModel.FR_Cliente_Pessoa", "Pessoa").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Pessoa>("clinicaModelModel.FR_Cliente_Pessoa", "Pessoa").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Pessoa>("clinicaModel.FR_Cliente_Pessoa", "Pessoa").Value = value;
             }
         }
         /// <summary>
@@ -689,13 +689,13 @@ namespace Historico_Vert
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Pessoa>("clinicaModelModel.FR_Cliente_Pessoa", "Pessoa");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Pessoa>("clinicaModel.FR_Cliente_Pessoa", "Pessoa");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Pessoa>("clinicaModelModel.FR_Cliente_Pessoa", "Pessoa", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Pessoa>("clinicaModel.FR_Cliente_Pessoa", "Pessoa", value);
                 }
             }
         }
@@ -707,7 +707,7 @@ namespace Historico_Vert
     /// <summary>
     /// Nenhuma Documentação de Metadados disponível.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="clinicaModelModel", Name="Endereco")]
+    [EdmEntityTypeAttribute(NamespaceName="clinicaModel", Name="Endereco")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
     public partial class Endereco : EntityObject
@@ -893,18 +893,18 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FK_EnderecoPessoa_Endereco", "EnderecoPessoa")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FK_EnderecoPessoa_Endereco", "EnderecoPessoa")]
         public EntityCollection<EnderecoPessoa> EnderecoPessoa
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<EnderecoPessoa>("clinicaModelModel.FK_EnderecoPessoa_Endereco", "EnderecoPessoa");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<EnderecoPessoa>("clinicaModel.FK_EnderecoPessoa_Endereco", "EnderecoPessoa");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<EnderecoPessoa>("clinicaModelModel.FK_EnderecoPessoa_Endereco", "EnderecoPessoa", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<EnderecoPessoa>("clinicaModel.FK_EnderecoPessoa_Endereco", "EnderecoPessoa", value);
                 }
             }
         }
@@ -916,7 +916,7 @@ namespace Historico_Vert
     /// <summary>
     /// Nenhuma Documentação de Metadados disponível.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="clinicaModelModel", Name="EnderecoPessoa")]
+    [EdmEntityTypeAttribute(NamespaceName="clinicaModel", Name="EnderecoPessoa")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
     public partial class EnderecoPessoa : EntityObject
@@ -1057,16 +1057,16 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FK_EnderecoPessoa_Endereco", "Endereco")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FK_EnderecoPessoa_Endereco", "Endereco")]
         public Endereco Endereco
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Endereco>("clinicaModelModel.FK_EnderecoPessoa_Endereco", "Endereco").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Endereco>("clinicaModel.FK_EnderecoPessoa_Endereco", "Endereco").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Endereco>("clinicaModelModel.FK_EnderecoPessoa_Endereco", "Endereco").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Endereco>("clinicaModel.FK_EnderecoPessoa_Endereco", "Endereco").Value = value;
             }
         }
         /// <summary>
@@ -1078,13 +1078,13 @@ namespace Historico_Vert
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Endereco>("clinicaModelModel.FK_EnderecoPessoa_Endereco", "Endereco");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Endereco>("clinicaModel.FK_EnderecoPessoa_Endereco", "Endereco");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Endereco>("clinicaModelModel.FK_EnderecoPessoa_Endereco", "Endereco", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Endereco>("clinicaModel.FK_EnderecoPessoa_Endereco", "Endereco", value);
                 }
             }
         }
@@ -1095,16 +1095,16 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FK_EnderecoPessoa_Pessoa", "Pessoa")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FK_EnderecoPessoa_Pessoa", "Pessoa")]
         public Pessoa Pessoa
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Pessoa>("clinicaModelModel.FK_EnderecoPessoa_Pessoa", "Pessoa").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Pessoa>("clinicaModel.FK_EnderecoPessoa_Pessoa", "Pessoa").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Pessoa>("clinicaModelModel.FK_EnderecoPessoa_Pessoa", "Pessoa").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Pessoa>("clinicaModel.FK_EnderecoPessoa_Pessoa", "Pessoa").Value = value;
             }
         }
         /// <summary>
@@ -1116,13 +1116,13 @@ namespace Historico_Vert
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Pessoa>("clinicaModelModel.FK_EnderecoPessoa_Pessoa", "Pessoa");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Pessoa>("clinicaModel.FK_EnderecoPessoa_Pessoa", "Pessoa");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Pessoa>("clinicaModelModel.FK_EnderecoPessoa_Pessoa", "Pessoa", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Pessoa>("clinicaModel.FK_EnderecoPessoa_Pessoa", "Pessoa", value);
                 }
             }
         }
@@ -1134,7 +1134,7 @@ namespace Historico_Vert
     /// <summary>
     /// Nenhuma Documentação de Metadados disponível.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="clinicaModelModel", Name="Especie")]
+    [EdmEntityTypeAttribute(NamespaceName="clinicaModel", Name="Especie")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
     public partial class Especie : EntityObject
@@ -1146,7 +1146,7 @@ namespace Historico_Vert
         /// </summary>
         /// <param name="id">Valor inicial da propriedade id.</param>
         /// <param name="nome">Valor inicial da propriedade nome.</param>
-        public static Especie CreateEspecie(global::System.Int32 id, global::System.Int32 nome)
+        public static Especie CreateEspecie(global::System.Int32 id, global::System.String nome)
         {
             Especie especie = new Especie();
             especie.id = id;
@@ -1190,7 +1190,7 @@ namespace Historico_Vert
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
-        public global::System.Int32 nome
+        public global::System.String nome
         {
             get
             {
@@ -1200,13 +1200,13 @@ namespace Historico_Vert
             {
                 OnnomeChanging(value);
                 ReportPropertyChanging("nome");
-                _nome = StructuralObject.SetValidValue(value);
+                _nome = StructuralObject.SetValidValue(value, false);
                 ReportPropertyChanged("nome");
                 OnnomeChanged();
             }
         }
-        private global::System.Int32 _nome;
-        partial void OnnomeChanging(global::System.Int32 value);
+        private global::System.String _nome;
+        partial void OnnomeChanging(global::System.String value);
         partial void OnnomeChanged();
     
         /// <summary>
@@ -1244,18 +1244,18 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FK_Raca_Especie", "Raca")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FK_Raca_Especie", "Raca")]
         public EntityCollection<Raca> Raca
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Raca>("clinicaModelModel.FK_Raca_Especie", "Raca");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Raca>("clinicaModel.FK_Raca_Especie", "Raca");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Raca>("clinicaModelModel.FK_Raca_Especie", "Raca", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Raca>("clinicaModel.FK_Raca_Especie", "Raca", value);
                 }
             }
         }
@@ -1267,7 +1267,7 @@ namespace Historico_Vert
     /// <summary>
     /// Nenhuma Documentação de Metadados disponível.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="clinicaModelModel", Name="Medico")]
+    [EdmEntityTypeAttribute(NamespaceName="clinicaModel", Name="Medico")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
     public partial class Medico : EntityObject
@@ -1379,16 +1379,16 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FK_Medico_Pessoa", "Pessoa")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FK_Medico_Pessoa", "Pessoa")]
         public Pessoa Pessoa
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Pessoa>("clinicaModelModel.FK_Medico_Pessoa", "Pessoa").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Pessoa>("clinicaModel.FK_Medico_Pessoa", "Pessoa").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Pessoa>("clinicaModelModel.FK_Medico_Pessoa", "Pessoa").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Pessoa>("clinicaModel.FK_Medico_Pessoa", "Pessoa").Value = value;
             }
         }
         /// <summary>
@@ -1400,13 +1400,13 @@ namespace Historico_Vert
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Pessoa>("clinicaModelModel.FK_Medico_Pessoa", "Pessoa");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Pessoa>("clinicaModel.FK_Medico_Pessoa", "Pessoa");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Pessoa>("clinicaModelModel.FK_Medico_Pessoa", "Pessoa", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Pessoa>("clinicaModel.FK_Medico_Pessoa", "Pessoa", value);
                 }
             }
         }
@@ -1417,18 +1417,18 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FK_Prontuario_Medico", "Prontuario")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FK_Prontuario_Medico", "Prontuario")]
         public EntityCollection<Prontuario> Prontuario
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Prontuario>("clinicaModelModel.FK_Prontuario_Medico", "Prontuario");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Prontuario>("clinicaModel.FK_Prontuario_Medico", "Prontuario");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Prontuario>("clinicaModelModel.FK_Prontuario_Medico", "Prontuario", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Prontuario>("clinicaModel.FK_Prontuario_Medico", "Prontuario", value);
                 }
             }
         }
@@ -1440,7 +1440,7 @@ namespace Historico_Vert
     /// <summary>
     /// Nenhuma Documentação de Metadados disponível.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="clinicaModelModel", Name="Paciente")]
+    [EdmEntityTypeAttribute(NamespaceName="clinicaModel", Name="Paciente")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
     public partial class Paciente : EntityObject
@@ -1650,18 +1650,18 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FK_BanhoTosa_Paciente", "BanhoTosa")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FK_BanhoTosa_Paciente", "BanhoTosa")]
         public EntityCollection<BanhoTosa> BanhoTosa
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<BanhoTosa>("clinicaModelModel.FK_BanhoTosa_Paciente", "BanhoTosa");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<BanhoTosa>("clinicaModel.FK_BanhoTosa_Paciente", "BanhoTosa");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<BanhoTosa>("clinicaModelModel.FK_BanhoTosa_Paciente", "BanhoTosa", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<BanhoTosa>("clinicaModel.FK_BanhoTosa_Paciente", "BanhoTosa", value);
                 }
             }
         }
@@ -1672,16 +1672,16 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FK_Paciente_Cliente", "Cliente")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FK_Paciente_Cliente", "Cliente")]
         public Cliente Cliente
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Cliente>("clinicaModelModel.FK_Paciente_Cliente", "Cliente").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Cliente>("clinicaModel.FK_Paciente_Cliente", "Cliente").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Cliente>("clinicaModelModel.FK_Paciente_Cliente", "Cliente").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Cliente>("clinicaModel.FK_Paciente_Cliente", "Cliente").Value = value;
             }
         }
         /// <summary>
@@ -1693,13 +1693,13 @@ namespace Historico_Vert
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Cliente>("clinicaModelModel.FK_Paciente_Cliente", "Cliente");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Cliente>("clinicaModel.FK_Paciente_Cliente", "Cliente");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Cliente>("clinicaModelModel.FK_Paciente_Cliente", "Cliente", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Cliente>("clinicaModel.FK_Paciente_Cliente", "Cliente", value);
                 }
             }
         }
@@ -1710,16 +1710,16 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FK_Paciente_Raca", "Raca")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FK_Paciente_Raca", "Raca")]
         public Raca Raca
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Raca>("clinicaModelModel.FK_Paciente_Raca", "Raca").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Raca>("clinicaModel.FK_Paciente_Raca", "Raca").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Raca>("clinicaModelModel.FK_Paciente_Raca", "Raca").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Raca>("clinicaModel.FK_Paciente_Raca", "Raca").Value = value;
             }
         }
         /// <summary>
@@ -1731,13 +1731,13 @@ namespace Historico_Vert
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Raca>("clinicaModelModel.FK_Paciente_Raca", "Raca");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Raca>("clinicaModel.FK_Paciente_Raca", "Raca");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Raca>("clinicaModelModel.FK_Paciente_Raca", "Raca", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Raca>("clinicaModel.FK_Paciente_Raca", "Raca", value);
                 }
             }
         }
@@ -1748,18 +1748,18 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FK_Prontuario_Paciente", "Prontuario")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FK_Prontuario_Paciente", "Prontuario")]
         public EntityCollection<Prontuario> Prontuario
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Prontuario>("clinicaModelModel.FK_Prontuario_Paciente", "Prontuario");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Prontuario>("clinicaModel.FK_Prontuario_Paciente", "Prontuario");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Prontuario>("clinicaModelModel.FK_Prontuario_Paciente", "Prontuario", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Prontuario>("clinicaModel.FK_Prontuario_Paciente", "Prontuario", value);
                 }
             }
         }
@@ -1771,7 +1771,7 @@ namespace Historico_Vert
     /// <summary>
     /// Nenhuma Documentação de Metadados disponível.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="clinicaModelModel", Name="Pessoa")]
+    [EdmEntityTypeAttribute(NamespaceName="clinicaModel", Name="Pessoa")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
     public partial class Pessoa : EntityObject
@@ -1909,18 +1909,18 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FR_Cliente_Pessoa", "Cliente")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FR_Cliente_Pessoa", "Cliente")]
         public EntityCollection<Cliente> Cliente
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Cliente>("clinicaModelModel.FR_Cliente_Pessoa", "Cliente");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Cliente>("clinicaModel.FR_Cliente_Pessoa", "Cliente");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Cliente>("clinicaModelModel.FR_Cliente_Pessoa", "Cliente", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Cliente>("clinicaModel.FR_Cliente_Pessoa", "Cliente", value);
                 }
             }
         }
@@ -1931,18 +1931,18 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FK_EnderecoPessoa_Pessoa", "EnderecoPessoa")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FK_EnderecoPessoa_Pessoa", "EnderecoPessoa")]
         public EntityCollection<EnderecoPessoa> EnderecoPessoa
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<EnderecoPessoa>("clinicaModelModel.FK_EnderecoPessoa_Pessoa", "EnderecoPessoa");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<EnderecoPessoa>("clinicaModel.FK_EnderecoPessoa_Pessoa", "EnderecoPessoa");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<EnderecoPessoa>("clinicaModelModel.FK_EnderecoPessoa_Pessoa", "EnderecoPessoa", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<EnderecoPessoa>("clinicaModel.FK_EnderecoPessoa_Pessoa", "EnderecoPessoa", value);
                 }
             }
         }
@@ -1953,18 +1953,18 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FK_Medico_Pessoa", "Medico")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FK_Medico_Pessoa", "Medico")]
         public EntityCollection<Medico> Medico
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Medico>("clinicaModelModel.FK_Medico_Pessoa", "Medico");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Medico>("clinicaModel.FK_Medico_Pessoa", "Medico");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Medico>("clinicaModelModel.FK_Medico_Pessoa", "Medico", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Medico>("clinicaModel.FK_Medico_Pessoa", "Medico", value);
                 }
             }
         }
@@ -1976,7 +1976,7 @@ namespace Historico_Vert
     /// <summary>
     /// Nenhuma Documentação de Metadados disponível.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="clinicaModelModel", Name="Prontuario")]
+    [EdmEntityTypeAttribute(NamespaceName="clinicaModel", Name="Prontuario")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
     public partial class Prontuario : EntityObject
@@ -2162,16 +2162,16 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FK_Prontuario_Medico", "Medico")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FK_Prontuario_Medico", "Medico")]
         public Medico Medico
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Medico>("clinicaModelModel.FK_Prontuario_Medico", "Medico").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Medico>("clinicaModel.FK_Prontuario_Medico", "Medico").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Medico>("clinicaModelModel.FK_Prontuario_Medico", "Medico").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Medico>("clinicaModel.FK_Prontuario_Medico", "Medico").Value = value;
             }
         }
         /// <summary>
@@ -2183,13 +2183,13 @@ namespace Historico_Vert
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Medico>("clinicaModelModel.FK_Prontuario_Medico", "Medico");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Medico>("clinicaModel.FK_Prontuario_Medico", "Medico");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Medico>("clinicaModelModel.FK_Prontuario_Medico", "Medico", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Medico>("clinicaModel.FK_Prontuario_Medico", "Medico", value);
                 }
             }
         }
@@ -2200,16 +2200,16 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FK_Prontuario_Paciente", "Paciente")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FK_Prontuario_Paciente", "Paciente")]
         public Paciente Paciente
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Paciente>("clinicaModelModel.FK_Prontuario_Paciente", "Paciente").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Paciente>("clinicaModel.FK_Prontuario_Paciente", "Paciente").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Paciente>("clinicaModelModel.FK_Prontuario_Paciente", "Paciente").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Paciente>("clinicaModel.FK_Prontuario_Paciente", "Paciente").Value = value;
             }
         }
         /// <summary>
@@ -2221,13 +2221,13 @@ namespace Historico_Vert
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Paciente>("clinicaModelModel.FK_Prontuario_Paciente", "Paciente");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Paciente>("clinicaModel.FK_Prontuario_Paciente", "Paciente");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Paciente>("clinicaModelModel.FK_Prontuario_Paciente", "Paciente", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Paciente>("clinicaModel.FK_Prontuario_Paciente", "Paciente", value);
                 }
             }
         }
@@ -2239,7 +2239,7 @@ namespace Historico_Vert
     /// <summary>
     /// Nenhuma Documentação de Metadados disponível.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="clinicaModelModel", Name="Raca")]
+    [EdmEntityTypeAttribute(NamespaceName="clinicaModel", Name="Raca")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
     public partial class Raca : EntityObject
@@ -2375,16 +2375,16 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FK_Raca_Especie", "Especie")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FK_Raca_Especie", "Especie")]
         public Especie Especie
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Especie>("clinicaModelModel.FK_Raca_Especie", "Especie").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Especie>("clinicaModel.FK_Raca_Especie", "Especie").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Especie>("clinicaModelModel.FK_Raca_Especie", "Especie").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Especie>("clinicaModel.FK_Raca_Especie", "Especie").Value = value;
             }
         }
         /// <summary>
@@ -2396,13 +2396,13 @@ namespace Historico_Vert
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Especie>("clinicaModelModel.FK_Raca_Especie", "Especie");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Especie>("clinicaModel.FK_Raca_Especie", "Especie");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Especie>("clinicaModelModel.FK_Raca_Especie", "Especie", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Especie>("clinicaModel.FK_Raca_Especie", "Especie", value);
                 }
             }
         }
@@ -2413,18 +2413,18 @@ namespace Historico_Vert
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("clinicaModelModel", "FK_Paciente_Raca", "Paciente")]
+        [EdmRelationshipNavigationPropertyAttribute("clinicaModel", "FK_Paciente_Raca", "Paciente")]
         public EntityCollection<Paciente> Paciente
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Paciente>("clinicaModelModel.FK_Paciente_Raca", "Paciente");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Paciente>("clinicaModel.FK_Paciente_Raca", "Paciente");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Paciente>("clinicaModelModel.FK_Paciente_Raca", "Paciente", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Paciente>("clinicaModel.FK_Paciente_Raca", "Paciente", value);
                 }
             }
         }
@@ -2436,7 +2436,7 @@ namespace Historico_Vert
     /// <summary>
     /// Nenhuma Documentação de Metadados disponível.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="clinicaModelModel", Name="Vacina")]
+    [EdmEntityTypeAttribute(NamespaceName="clinicaModel", Name="Vacina")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
     public partial class Vacina : EntityObject

@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="clinicaModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="clinicaModelStoreContainer">
+    <EntitySet Name="BanhoTosa" EntityType="clinicaModel.Store.BanhoTosa" store:Type="Tables" />
+    <EntitySet Name="Cliente" EntityType="clinicaModel.Store.Cliente" store:Type="Tables" />
+    <EntitySet Name="Endereco" EntityType="clinicaModel.Store.Endereco" store:Type="Tables" />
+    <EntitySet Name="EnderecoPessoa" EntityType="clinicaModel.Store.EnderecoPessoa" store:Type="Tables" />
+    <EntitySet Name="Especie" EntityType="clinicaModel.Store.Especie" store:Type="Tables" />
+    <EntitySet Name="Medico" EntityType="clinicaModel.Store.Medico" store:Type="Tables" />
+    <EntitySet Name="Paciente" EntityType="clinicaModel.Store.Paciente" store:Type="Tables" />
+    <EntitySet Name="Pessoa" EntityType="clinicaModel.Store.Pessoa" store:Type="Tables" />
+    <EntitySet Name="Prontuario" EntityType="clinicaModel.Store.Prontuario" store:Type="Tables" />
+    <EntitySet Name="Raca" EntityType="clinicaModel.Store.Raca" store:Type="Tables" />
+    <EntitySet Name="Vacina" EntityType="clinicaModel.Store.Vacina" store:Type="Tables" />
+    <AssociationSet Name="FK_BanhoTosa_Paciente" Association="clinicaModel.Store.FK_BanhoTosa_Paciente">
+      <End Role="Paciente" EntitySet="Paciente" />
+      <End Role="BanhoTosa" EntitySet="BanhoTosa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EnderecoPessoa_Endereco" Association="clinicaModel.Store.FK_EnderecoPessoa_Endereco">
+      <End Role="Endereco" EntitySet="Endereco" />
+      <End Role="EnderecoPessoa" EntitySet="EnderecoPessoa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EnderecoPessoa_Pessoa" Association="clinicaModel.Store.FK_EnderecoPessoa_Pessoa">
+      <End Role="Pessoa" EntitySet="Pessoa" />
+      <End Role="EnderecoPessoa" EntitySet="EnderecoPessoa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Medico_Pessoa" Association="clinicaModel.Store.FK_Medico_Pessoa">
+      <End Role="Pessoa" EntitySet="Pessoa" />
+      <End Role="Medico" EntitySet="Medico" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Paciente_Cliente" Association="clinicaModel.Store.FK_Paciente_Cliente">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Paciente" EntitySet="Paciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Paciente_Raca" Association="clinicaModel.Store.FK_Paciente_Raca">
+      <End Role="Raca" EntitySet="Raca" />
+      <End Role="Paciente" EntitySet="Paciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Prontuario_Medico" Association="clinicaModel.Store.FK_Prontuario_Medico">
+      <End Role="Medico" EntitySet="Medico" />
+      <End Role="Prontuario" EntitySet="Prontuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Prontuario_Paciente" Association="clinicaModel.Store.FK_Prontuario_Paciente">
+      <End Role="Paciente" EntitySet="Paciente" />
+      <End Role="Prontuario" EntitySet="Prontuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Raca_Especie" Association="clinicaModel.Store.FK_Raca_Especie">
+      <End Role="Especie" EntitySet="Especie" />
+      <End Role="Raca" EntitySet="Raca" />
+    </AssociationSet>
+    <AssociationSet Name="FR_Cliente_Pessoa" Association="clinicaModel.Store.FR_Cliente_Pessoa">
+      <End Role="Pessoa" EntitySet="Pessoa" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="BanhoTosa">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idPaciente" Type="int" Nullable="false" />
+    <Property Name="banho" Type="bit" Nullable="false" />
+    <Property Name="tosa" Type="bit" Nullable="false" />
+    <Property Name="diaHora" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idPessoa" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Endereco">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="rua" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="bairro" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="cidade" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="estado" Type="nvarchar" MaxLength="10" />
+    <Property Name="cep" Type="int" />
+  </EntityType>
+  <EntityType Name="EnderecoPessoa">
+    <Key>
+      <PropertyRef Name="idPessoa" />
+      <PropertyRef Name="idEndereco" />
+    </Key>
+    <Property Name="idPessoa" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idEndereco" Type="int" Nullable="false" />
+    <Property Name="numero" Type="int" Nullable="false" />
+    <Property Name="complemento" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Especie">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nome" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="descricao" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Medico">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idPessoa" Type="int" Nullable="false" />
+    <Property Name="crmv" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Paciente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idRaca" Type="int" Nullable="false" />
+    <Property Name="idCliente" Type="int" Nullable="false" />
+    <Property Name="nome" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="cor" Type="nvarchar" MaxLength="10" />
+    <Property Name="dataNascimento" Type="datetime" />
+    <Property Name="dataEntrada" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Pessoa">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nome" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="telefone" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="email" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Prontuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idPaciente" Type="int" Nullable="false" />
+    <Property Name="idMedico" Type="int" Nullable="false" />
+    <Property Name="texto" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="expressaoChave" Type="nvarchar" MaxLength="10" />
+    <Property Name="data" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Raca">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idEspecie" Type="int" Nullable="false" />
+    <Property Name="nome" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="descricao" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Vacina">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nome" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="duracao" Type="int" Nullable="false" />
+    <Property Name="tempo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="descricao" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <Association Name="FK_BanhoTosa_Paciente">
+    <End Role="Paciente" Type="clinicaModel.Store.Paciente" Multiplicity="1" />
+    <End Role="BanhoTosa" Type="clinicaModel.Store.BanhoTosa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paciente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="BanhoTosa">
+        <PropertyRef Name="idPaciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EnderecoPessoa_Endereco">
+    <End Role="Endereco" Type="clinicaModel.Store.Endereco" Multiplicity="1" />
+    <End Role="EnderecoPessoa" Type="clinicaModel.Store.EnderecoPessoa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Endereco">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EnderecoPessoa">
+        <PropertyRef Name="idEndereco" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EnderecoPessoa_Pessoa">
+    <End Role="Pessoa" Type="clinicaModel.Store.Pessoa" Multiplicity="1" />
+    <End Role="EnderecoPessoa" Type="clinicaModel.Store.EnderecoPessoa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pessoa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EnderecoPessoa">
+        <PropertyRef Name="idPessoa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Medico_Pessoa">
+    <End Role="Pessoa" Type="clinicaModel.Store.Pessoa" Multiplicity="1" />
+    <End Role="Medico" Type="clinicaModel.Store.Medico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pessoa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Medico">
+        <PropertyRef Name="idPessoa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Paciente_Cliente">
+    <End Role="Cliente" Type="clinicaModel.Store.Cliente" Multiplicity="1" />
+    <End Role="Paciente" Type="clinicaModel.Store.Paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Paciente">
+        <PropertyRef Name="idCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Paciente_Raca">
+    <End Role="Raca" Type="clinicaModel.Store.Raca" Multiplicity="1" />
+    <End Role="Paciente" Type="clinicaModel.Store.Paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Raca">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Paciente">
+        <PropertyRef Name="idRaca" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Prontuario_Medico">
+    <End Role="Medico" Type="clinicaModel.Store.Medico" Multiplicity="1" />
+    <End Role="Prontuario" Type="clinicaModel.Store.Prontuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medico">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Prontuario">
+        <PropertyRef Name="idMedico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Prontuario_Paciente">
+    <End Role="Paciente" Type="clinicaModel.Store.Paciente" Multiplicity="1" />
+    <End Role="Prontuario" Type="clinicaModel.Store.Prontuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paciente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Prontuario">
+        <PropertyRef Name="idPaciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Raca_Especie">
+    <End Role="Especie" Type="clinicaModel.Store.Especie" Multiplicity="1" />
+    <End Role="Raca" Type="clinicaModel.Store.Raca" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Especie">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Raca">
+        <PropertyRef Name="idEspecie" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FR_Cliente_Pessoa">
+    <End Role="Pessoa" Type="clinicaModel.Store.Pessoa" Multiplicity="1" />
+    <End Role="Cliente" Type="clinicaModel.Store.Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pessoa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="idPessoa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -2,14 +2,15 @@
 using System.Drawing;
 using System.Windows.Forms;
 using System.Data;
-using Historico_Vert.GUI.Prontuario;
-using Historico_Vert.GUI.Paciente;
+//using Historico_Vert.GUI.Prontuario;
+//using Historico_Vert.GUI.Paciente;
 using Historico_Vert.DAO;
-using Historico_Vert.GUI.Pessoa;
+//using Historico_Vert.GUI.Pessoa;
+//using Historico_Vert.GUI.Especie;
+//using Historico_Vert.GUI.Raca;
+//using Historico_Vert.GUI.Vacina;
+//using Historico_Vert.GUI.BanhoTosa;
 using Historico_Vert.GUI.Especie;
-using Historico_Vert.GUI.Raca;
-using Historico_Vert.GUI.Vacina;
-using Historico_Vert.GUI.BanhoTosa;
 using Historico_Vert.GUI.Principal;
 
 
@@ -94,63 +95,63 @@ namespace Historico_Vert.GUI
 
         public void tsmiProntuarioNovo_Click(object sender, EventArgs e)
         {
-            ClearForm();
-            var user = new AddProntuario(this);
-            Controls.Add(user);
-            Show(user);
+            //ClearForm();
+            //var user = new AddProntuario(this);
+            //Controls.Add(user);
+            //Show(user);
         }
 
         private void tsmiProntuarioPesquisar_Click(object sender, EventArgs e)
         {
-            ClearForm();
-            var user = new PesquisaProntuario(this);
-            Controls.Add(user);
-            Show(user);
+            //ClearForm();
+            //var user = new PesquisaProntuario(this);
+            //Controls.Add(user);
+            //Show(user);
         }
 
         private void tsmiPacienteNovo_Click(object sender, EventArgs e)
         {
-            ClearForm();
-            var paciente = new AddPaciente(this);
-            if (sender.Equals("a"))
-               paciente.SetbtAcao_Text("Atualizar");
-            Controls.Add(paciente);
-            Show(paciente);
+            //ClearForm();
+            //var paciente = new AddPaciente(this);
+            //if (sender.Equals("a"))
+            //   paciente.SetbtAcao_Text("Atualizar");
+            //Controls.Add(paciente);
+            //Show(paciente);
         }
 
         private void tsmiPacientePesquisar_Click(object sender, EventArgs e)
         {
-            ClearForm();
-            var paciente = new PesquisaPaciente(this);
-            Controls.Add(paciente);
-            Show(paciente);
+            //ClearForm();
+            //var paciente = new PesquisaPaciente(this);
+            //Controls.Add(paciente);
+            //Show(paciente);
 
         }
 
         private void tsmiDonoNovo_Click(object sender, EventArgs e)
         {
-            ClearForm();
-            var pessoa = new AddPessoa(this);
-            if (sender is Data.Pessoa)
-            {
-                pessoa.SetBtAcao_Text("Atualizar");
-                pessoa.pessoa = (Data.Pessoa) sender;
-                pessoa.ColocarDadosTela();
-            }
-            Controls.Add(pessoa);
-            Show(pessoa);
+            //ClearForm();
+            //var pessoa = new AddPessoa(this);
+            //if (sender is Data.Pessoa)
+            //{
+            //    pessoa.SetBtAcao_Text("Atualizar");
+            //    pessoa.pessoa = (Data.Pessoa) sender;
+            //    pessoa.ColocarDadosTela();
+            //}
+            //Controls.Add(pessoa);
+            //Show(pessoa);
         }
 
         private void tsmiDonoPesquisar_Click(object sender, EventArgs e)
         {
-            ClearForm();
-            var pessoa = new PesquisaPessoa(this);
-            if (sender is Data.Pessoa)
-            {
-                pessoa.ColocarDadosTela((Data.Pessoa)sender);
-            }
-            Controls.Add(pessoa);
-            Show(pessoa);
+        //    ClearForm();
+        //    var pessoa = new PesquisaPessoa(this);
+        //    if (sender is Data.Pessoa)
+        //    {
+        //        pessoa.ColocarDadosTela((Data.Pessoa)sender);
+        //    }
+        //    Controls.Add(pessoa);
+        //    Show(pessoa);
         }
 
         private void tsmiEspecieNovo_Click(object sender, EventArgs e)
@@ -163,85 +164,85 @@ namespace Historico_Vert.GUI
 
         private void tsmiEspeciePesquisar_Click(object sender, EventArgs e)
         {
-            ClearForm();
-            var especie = new PesquisaEspecie(this);
-            Controls.Add(especie);
-            Show(especie);
+            //ClearForm();
+            //var especie = new PesquisaEspecie(this);
+            //Controls.Add(especie);
+            //Show(especie);
         }
 
         private void tsmiRacaNovo_Click(object sender, EventArgs e)
         {
-            ClearForm();
-            var raca = new AddRaca(this);
-            Controls.Add(raca);
-            Show(raca);
+            //ClearForm();
+            //var raca = new AddRaca(this);
+            //Controls.Add(raca);
+            //Show(raca);
         }
 
         private void tsmiRacaPesquisar_Click(object sender, EventArgs e)
         {
-            ClearForm();
-            var raca = new PesquisaRaca(this);
-            Controls.Add(raca);
-            Show(raca);
+            //ClearForm();
+            //var raca = new PesquisaRaca(this);
+            //Controls.Add(raca);
+            //Show(raca);
         }
 
         private void tsmiMedicoNovo_Click(object sender, EventArgs e)
         {
-            ClearForm();
-            var vet = new AddPessoa(this);
-            vet.SetGrbPessoaName("Dados do Médico Veterinário");
-            if (sender is Data.Pessoa)
-            {
-                vet.SetBtAcao_Text("Atualizar");
-                vet.pessoa = (Data.Pessoa) sender;
-            }
-            Controls.Add(vet);
-            Show(vet);
+            //ClearForm();
+            //var vet = new AddPessoa(this);
+            //vet.SetGrbPessoaName("Dados do Médico Veterinário");
+            //if (sender is Data.Pessoa)
+            //{
+            //    vet.SetBtAcao_Text("Atualizar");
+            //    vet.pessoa = (Data.Pessoa) sender;
+            //}
+            //Controls.Add(vet);
+            //Show(vet);
         }
 
         private void tsmiMedicoPesquisar_Click(object sender, EventArgs e)
         {
-            ClearForm();
-            var vet = new PesquisaPessoa(this);
-            if (sender is Data.Pessoa)
-            {
-                vet.ColocarDadosTela((Data.Pessoa)sender);
-            }
-            vet.PesquisaMedico();
-            Controls.Add(vet);
-            Show(vet);
+            //ClearForm();
+            //var vet = new PesquisaPessoa(this);
+            //if (sender is Data.Pessoa)
+            //{
+            //    vet.ColocarDadosTela((Data.Pessoa)sender);
+            //}
+            //vet.PesquisaMedico();
+            //Controls.Add(vet);
+            //Show(vet);
         }
 
         private void tsmiVacinaNovo_Click(object sender, EventArgs e)
         {
-            ClearForm();
-            var vacina = new AddVacina(this);
-            Controls.Add(vacina);
-            Show(vacina);
+            //ClearForm();
+            //var vacina = new AddVacina(this);
+            //Controls.Add(vacina);
+            //Show(vacina);
         }
 
         private void tsmiVacinaPesquisar_Click(object sender, EventArgs e)
         {
-            ClearForm();
-            var vacina = new PesquisaVacina(this);
-            Controls.Add(vacina);
-            Show(vacina);
+            //ClearForm();
+            //var vacina = new PesquisaVacina(this);
+            //Controls.Add(vacina);
+            //Show(vacina);
         }
 
         private void tsmiBanhoTosaNovo_Click(object sender, EventArgs e)
         {
-            ClearForm();
-            var banho = new AddBanhoTosa();
-            Controls.Add(banho);
-            Show(banho);
+            //ClearForm();
+            //var banho = new AddBanhoTosa();
+            //Controls.Add(banho);
+            //Show(banho);
         }
 
         private void tsmiBanhoTosaPesquisar_Click(object sender, EventArgs e)
         {
-            ClearForm();
-            var banho = new PesquisaBanhoTosa(this);
-            Controls.Add(banho);
-            Show(banho);
+            //ClearForm();
+            //var banho = new PesquisaBanhoTosa(this);
+            //Controls.Add(banho);
+            //Show(banho);
         }
 
         private void tsmiPrincipal_Click(object sender, EventArgs e)

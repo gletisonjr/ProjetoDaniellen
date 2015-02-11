@@ -3,56 +3,56 @@
 <edmx:Runtime>
 <!-- SSDL content -->
 <edmx:StorageModels>
-<Schema Namespace="clinicaModelModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
-  <EntityContainer Name="clinicaModelModelStoreContainer">
-    <EntitySet Name="BanhoTosa" EntityType="clinicaModelModel.Store.BanhoTosa" store:Type="Tables" />
-    <EntitySet Name="Cliente" EntityType="clinicaModelModel.Store.Cliente" store:Type="Tables" />
-    <EntitySet Name="Endereco" EntityType="clinicaModelModel.Store.Endereco" store:Type="Tables" />
-    <EntitySet Name="EnderecoPessoa" EntityType="clinicaModelModel.Store.EnderecoPessoa" store:Type="Tables" />
-    <EntitySet Name="Especie" EntityType="clinicaModelModel.Store.Especie" store:Type="Tables" />
-    <EntitySet Name="Medico" EntityType="clinicaModelModel.Store.Medico" store:Type="Tables" />
-    <EntitySet Name="Paciente" EntityType="clinicaModelModel.Store.Paciente" store:Type="Tables" />
-    <EntitySet Name="Pessoa" EntityType="clinicaModelModel.Store.Pessoa" store:Type="Tables" />
-    <EntitySet Name="Prontuario" EntityType="clinicaModelModel.Store.Prontuario" store:Type="Tables" />
-    <EntitySet Name="Raca" EntityType="clinicaModelModel.Store.Raca" store:Type="Tables" />
-    <EntitySet Name="Vacina" EntityType="clinicaModelModel.Store.Vacina" store:Type="Tables" />
-    <AssociationSet Name="FK_BanhoTosa_Paciente" Association="clinicaModelModel.Store.FK_BanhoTosa_Paciente">
+<Schema Namespace="clinicaModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="clinicaModelStoreContainer">
+    <EntitySet Name="BanhoTosa" EntityType="clinicaModel.Store.BanhoTosa" store:Type="Tables" />
+    <EntitySet Name="Cliente" EntityType="clinicaModel.Store.Cliente" store:Type="Tables" />
+    <EntitySet Name="Endereco" EntityType="clinicaModel.Store.Endereco" store:Type="Tables" />
+    <EntitySet Name="EnderecoPessoa" EntityType="clinicaModel.Store.EnderecoPessoa" store:Type="Tables" />
+    <EntitySet Name="Especie" EntityType="clinicaModel.Store.Especie" store:Type="Tables" />
+    <EntitySet Name="Medico" EntityType="clinicaModel.Store.Medico" store:Type="Tables" />
+    <EntitySet Name="Paciente" EntityType="clinicaModel.Store.Paciente" store:Type="Tables" />
+    <EntitySet Name="Pessoa" EntityType="clinicaModel.Store.Pessoa" store:Type="Tables" />
+    <EntitySet Name="Prontuario" EntityType="clinicaModel.Store.Prontuario" store:Type="Tables" />
+    <EntitySet Name="Raca" EntityType="clinicaModel.Store.Raca" store:Type="Tables" />
+    <EntitySet Name="Vacina" EntityType="clinicaModel.Store.Vacina" store:Type="Tables" />
+    <AssociationSet Name="FK_BanhoTosa_Paciente" Association="clinicaModel.Store.FK_BanhoTosa_Paciente">
       <End Role="Paciente" EntitySet="Paciente" />
       <End Role="BanhoTosa" EntitySet="BanhoTosa" />
     </AssociationSet>
-    <AssociationSet Name="FK_EnderecoPessoa_Endereco" Association="clinicaModelModel.Store.FK_EnderecoPessoa_Endereco">
+    <AssociationSet Name="FK_EnderecoPessoa_Endereco" Association="clinicaModel.Store.FK_EnderecoPessoa_Endereco">
       <End Role="Endereco" EntitySet="Endereco" />
       <End Role="EnderecoPessoa" EntitySet="EnderecoPessoa" />
     </AssociationSet>
-    <AssociationSet Name="FK_EnderecoPessoa_Pessoa" Association="clinicaModelModel.Store.FK_EnderecoPessoa_Pessoa">
+    <AssociationSet Name="FK_EnderecoPessoa_Pessoa" Association="clinicaModel.Store.FK_EnderecoPessoa_Pessoa">
       <End Role="Pessoa" EntitySet="Pessoa" />
       <End Role="EnderecoPessoa" EntitySet="EnderecoPessoa" />
     </AssociationSet>
-    <AssociationSet Name="FK_Medico_Pessoa" Association="clinicaModelModel.Store.FK_Medico_Pessoa">
+    <AssociationSet Name="FK_Medico_Pessoa" Association="clinicaModel.Store.FK_Medico_Pessoa">
       <End Role="Pessoa" EntitySet="Pessoa" />
       <End Role="Medico" EntitySet="Medico" />
     </AssociationSet>
-    <AssociationSet Name="FK_Paciente_Cliente" Association="clinicaModelModel.Store.FK_Paciente_Cliente">
+    <AssociationSet Name="FK_Paciente_Cliente" Association="clinicaModel.Store.FK_Paciente_Cliente">
       <End Role="Cliente" EntitySet="Cliente" />
       <End Role="Paciente" EntitySet="Paciente" />
     </AssociationSet>
-    <AssociationSet Name="FK_Paciente_Raca" Association="clinicaModelModel.Store.FK_Paciente_Raca">
+    <AssociationSet Name="FK_Paciente_Raca" Association="clinicaModel.Store.FK_Paciente_Raca">
       <End Role="Raca" EntitySet="Raca" />
       <End Role="Paciente" EntitySet="Paciente" />
     </AssociationSet>
-    <AssociationSet Name="FK_Prontuario_Medico" Association="clinicaModelModel.Store.FK_Prontuario_Medico">
+    <AssociationSet Name="FK_Prontuario_Medico" Association="clinicaModel.Store.FK_Prontuario_Medico">
       <End Role="Medico" EntitySet="Medico" />
       <End Role="Prontuario" EntitySet="Prontuario" />
     </AssociationSet>
-    <AssociationSet Name="FK_Prontuario_Paciente" Association="clinicaModelModel.Store.FK_Prontuario_Paciente">
+    <AssociationSet Name="FK_Prontuario_Paciente" Association="clinicaModel.Store.FK_Prontuario_Paciente">
       <End Role="Paciente" EntitySet="Paciente" />
       <End Role="Prontuario" EntitySet="Prontuario" />
     </AssociationSet>
-    <AssociationSet Name="FK_Raca_Especie" Association="clinicaModelModel.Store.FK_Raca_Especie">
+    <AssociationSet Name="FK_Raca_Especie" Association="clinicaModel.Store.FK_Raca_Especie">
       <End Role="Especie" EntitySet="Especie" />
       <End Role="Raca" EntitySet="Raca" />
     </AssociationSet>
-    <AssociationSet Name="FR_Cliente_Pessoa" Association="clinicaModelModel.Store.FR_Cliente_Pessoa">
+    <AssociationSet Name="FR_Cliente_Pessoa" Association="clinicaModel.Store.FR_Cliente_Pessoa">
       <End Role="Pessoa" EntitySet="Pessoa" />
       <End Role="Cliente" EntitySet="Cliente" />
     </AssociationSet>
@@ -100,7 +100,7 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-    <Property Name="nome" Type="int" Nullable="false" />
+    <Property Name="nome" Type="nvarchar" Nullable="false" MaxLength="100" />
     <Property Name="descricao" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Medico">
@@ -163,8 +163,8 @@
     <Property Name="descricao" Type="nvarchar" MaxLength="10" />
   </EntityType>
   <Association Name="FK_BanhoTosa_Paciente">
-    <End Role="Paciente" Type="clinicaModelModel.Store.Paciente" Multiplicity="1" />
-    <End Role="BanhoTosa" Type="clinicaModelModel.Store.BanhoTosa" Multiplicity="*" />
+    <End Role="Paciente" Type="clinicaModel.Store.Paciente" Multiplicity="1" />
+    <End Role="BanhoTosa" Type="clinicaModel.Store.BanhoTosa" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Paciente">
         <PropertyRef Name="id" />
@@ -175,8 +175,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_EnderecoPessoa_Endereco">
-    <End Role="Endereco" Type="clinicaModelModel.Store.Endereco" Multiplicity="1" />
-    <End Role="EnderecoPessoa" Type="clinicaModelModel.Store.EnderecoPessoa" Multiplicity="*" />
+    <End Role="Endereco" Type="clinicaModel.Store.Endereco" Multiplicity="1" />
+    <End Role="EnderecoPessoa" Type="clinicaModel.Store.EnderecoPessoa" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Endereco">
         <PropertyRef Name="id" />
@@ -187,8 +187,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_EnderecoPessoa_Pessoa">
-    <End Role="Pessoa" Type="clinicaModelModel.Store.Pessoa" Multiplicity="1" />
-    <End Role="EnderecoPessoa" Type="clinicaModelModel.Store.EnderecoPessoa" Multiplicity="*" />
+    <End Role="Pessoa" Type="clinicaModel.Store.Pessoa" Multiplicity="1" />
+    <End Role="EnderecoPessoa" Type="clinicaModel.Store.EnderecoPessoa" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Pessoa">
         <PropertyRef Name="id" />
@@ -199,8 +199,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Medico_Pessoa">
-    <End Role="Pessoa" Type="clinicaModelModel.Store.Pessoa" Multiplicity="1" />
-    <End Role="Medico" Type="clinicaModelModel.Store.Medico" Multiplicity="*" />
+    <End Role="Pessoa" Type="clinicaModel.Store.Pessoa" Multiplicity="1" />
+    <End Role="Medico" Type="clinicaModel.Store.Medico" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Pessoa">
         <PropertyRef Name="id" />
@@ -211,8 +211,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Paciente_Cliente">
-    <End Role="Cliente" Type="clinicaModelModel.Store.Cliente" Multiplicity="1" />
-    <End Role="Paciente" Type="clinicaModelModel.Store.Paciente" Multiplicity="*" />
+    <End Role="Cliente" Type="clinicaModel.Store.Cliente" Multiplicity="1" />
+    <End Role="Paciente" Type="clinicaModel.Store.Paciente" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Cliente">
         <PropertyRef Name="id" />
@@ -223,8 +223,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Paciente_Raca">
-    <End Role="Raca" Type="clinicaModelModel.Store.Raca" Multiplicity="1" />
-    <End Role="Paciente" Type="clinicaModelModel.Store.Paciente" Multiplicity="*" />
+    <End Role="Raca" Type="clinicaModel.Store.Raca" Multiplicity="1" />
+    <End Role="Paciente" Type="clinicaModel.Store.Paciente" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Raca">
         <PropertyRef Name="id" />
@@ -235,8 +235,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Prontuario_Medico">
-    <End Role="Medico" Type="clinicaModelModel.Store.Medico" Multiplicity="1" />
-    <End Role="Prontuario" Type="clinicaModelModel.Store.Prontuario" Multiplicity="*" />
+    <End Role="Medico" Type="clinicaModel.Store.Medico" Multiplicity="1" />
+    <End Role="Prontuario" Type="clinicaModel.Store.Prontuario" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Medico">
         <PropertyRef Name="id" />
@@ -247,8 +247,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Prontuario_Paciente">
-    <End Role="Paciente" Type="clinicaModelModel.Store.Paciente" Multiplicity="1" />
-    <End Role="Prontuario" Type="clinicaModelModel.Store.Prontuario" Multiplicity="*" />
+    <End Role="Paciente" Type="clinicaModel.Store.Paciente" Multiplicity="1" />
+    <End Role="Prontuario" Type="clinicaModel.Store.Prontuario" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Paciente">
         <PropertyRef Name="id" />
@@ -259,8 +259,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Raca_Especie">
-    <End Role="Especie" Type="clinicaModelModel.Store.Especie" Multiplicity="1" />
-    <End Role="Raca" Type="clinicaModelModel.Store.Raca" Multiplicity="*" />
+    <End Role="Especie" Type="clinicaModel.Store.Especie" Multiplicity="1" />
+    <End Role="Raca" Type="clinicaModel.Store.Raca" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Especie">
         <PropertyRef Name="id" />
@@ -271,8 +271,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FR_Cliente_Pessoa">
-    <End Role="Pessoa" Type="clinicaModelModel.Store.Pessoa" Multiplicity="1" />
-    <End Role="Cliente" Type="clinicaModelModel.Store.Cliente" Multiplicity="*" />
+    <End Role="Pessoa" Type="clinicaModel.Store.Pessoa" Multiplicity="1" />
+    <End Role="Cliente" Type="clinicaModel.Store.Cliente" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Pessoa">
         <PropertyRef Name="id" />
@@ -286,56 +286,56 @@
 </edmx:StorageModels>
 <!-- CSDL content -->
 <edmx:ConceptualModels>
-<Schema Namespace="clinicaModelModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
-  <EntityContainer Name="clinicaModelEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="BanhoTosa" EntityType="clinicaModelModel.BanhoTosa" />
-    <EntitySet Name="Cliente" EntityType="clinicaModelModel.Cliente" />
-    <EntitySet Name="Endereco" EntityType="clinicaModelModel.Endereco" />
-    <EntitySet Name="EnderecoPessoa" EntityType="clinicaModelModel.EnderecoPessoa" />
-    <EntitySet Name="Especie" EntityType="clinicaModelModel.Especie" />
-    <EntitySet Name="Medico" EntityType="clinicaModelModel.Medico" />
-    <EntitySet Name="Paciente" EntityType="clinicaModelModel.Paciente" />
-    <EntitySet Name="Pessoa" EntityType="clinicaModelModel.Pessoa" />
-    <EntitySet Name="Prontuario" EntityType="clinicaModelModel.Prontuario" />
-    <EntitySet Name="Raca" EntityType="clinicaModelModel.Raca" />
-    <EntitySet Name="Vacina" EntityType="clinicaModelModel.Vacina" />
-    <AssociationSet Name="FK_BanhoTosa_Paciente" Association="clinicaModelModel.FK_BanhoTosa_Paciente">
+<Schema Namespace="clinicaModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="clinicaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BanhoTosa" EntityType="clinicaModel.BanhoTosa" />
+    <EntitySet Name="Cliente" EntityType="clinicaModel.Cliente" />
+    <EntitySet Name="Endereco" EntityType="clinicaModel.Endereco" />
+    <EntitySet Name="EnderecoPessoa" EntityType="clinicaModel.EnderecoPessoa" />
+    <EntitySet Name="Especie" EntityType="clinicaModel.Especie" />
+    <EntitySet Name="Medico" EntityType="clinicaModel.Medico" />
+    <EntitySet Name="Paciente" EntityType="clinicaModel.Paciente" />
+    <EntitySet Name="Pessoa" EntityType="clinicaModel.Pessoa" />
+    <EntitySet Name="Prontuario" EntityType="clinicaModel.Prontuario" />
+    <EntitySet Name="Raca" EntityType="clinicaModel.Raca" />
+    <EntitySet Name="Vacina" EntityType="clinicaModel.Vacina" />
+    <AssociationSet Name="FK_BanhoTosa_Paciente" Association="clinicaModel.FK_BanhoTosa_Paciente">
       <End Role="Paciente" EntitySet="Paciente" />
       <End Role="BanhoTosa" EntitySet="BanhoTosa" />
     </AssociationSet>
-    <AssociationSet Name="FK_Paciente_Cliente" Association="clinicaModelModel.FK_Paciente_Cliente">
+    <AssociationSet Name="FK_Paciente_Cliente" Association="clinicaModel.FK_Paciente_Cliente">
       <End Role="Cliente" EntitySet="Cliente" />
       <End Role="Paciente" EntitySet="Paciente" />
     </AssociationSet>
-    <AssociationSet Name="FR_Cliente_Pessoa" Association="clinicaModelModel.FR_Cliente_Pessoa">
+    <AssociationSet Name="FR_Cliente_Pessoa" Association="clinicaModel.FR_Cliente_Pessoa">
       <End Role="Pessoa" EntitySet="Pessoa" />
       <End Role="Cliente" EntitySet="Cliente" />
     </AssociationSet>
-    <AssociationSet Name="FK_EnderecoPessoa_Endereco" Association="clinicaModelModel.FK_EnderecoPessoa_Endereco">
+    <AssociationSet Name="FK_EnderecoPessoa_Endereco" Association="clinicaModel.FK_EnderecoPessoa_Endereco">
       <End Role="Endereco" EntitySet="Endereco" />
       <End Role="EnderecoPessoa" EntitySet="EnderecoPessoa" />
     </AssociationSet>
-    <AssociationSet Name="FK_EnderecoPessoa_Pessoa" Association="clinicaModelModel.FK_EnderecoPessoa_Pessoa">
+    <AssociationSet Name="FK_EnderecoPessoa_Pessoa" Association="clinicaModel.FK_EnderecoPessoa_Pessoa">
       <End Role="Pessoa" EntitySet="Pessoa" />
       <End Role="EnderecoPessoa" EntitySet="EnderecoPessoa" />
     </AssociationSet>
-    <AssociationSet Name="FK_Raca_Especie" Association="clinicaModelModel.FK_Raca_Especie">
+    <AssociationSet Name="FK_Raca_Especie" Association="clinicaModel.FK_Raca_Especie">
       <End Role="Especie" EntitySet="Especie" />
       <End Role="Raca" EntitySet="Raca" />
     </AssociationSet>
-    <AssociationSet Name="FK_Medico_Pessoa" Association="clinicaModelModel.FK_Medico_Pessoa">
+    <AssociationSet Name="FK_Medico_Pessoa" Association="clinicaModel.FK_Medico_Pessoa">
       <End Role="Pessoa" EntitySet="Pessoa" />
       <End Role="Medico" EntitySet="Medico" />
     </AssociationSet>
-    <AssociationSet Name="FK_Prontuario_Medico" Association="clinicaModelModel.FK_Prontuario_Medico">
+    <AssociationSet Name="FK_Prontuario_Medico" Association="clinicaModel.FK_Prontuario_Medico">
       <End Role="Medico" EntitySet="Medico" />
       <End Role="Prontuario" EntitySet="Prontuario" />
     </AssociationSet>
-    <AssociationSet Name="FK_Paciente_Raca" Association="clinicaModelModel.FK_Paciente_Raca">
+    <AssociationSet Name="FK_Paciente_Raca" Association="clinicaModel.FK_Paciente_Raca">
       <End Role="Raca" EntitySet="Raca" />
       <End Role="Paciente" EntitySet="Paciente" />
     </AssociationSet>
-    <AssociationSet Name="FK_Prontuario_Paciente" Association="clinicaModelModel.FK_Prontuario_Paciente">
+    <AssociationSet Name="FK_Prontuario_Paciente" Association="clinicaModel.FK_Prontuario_Paciente">
       <End Role="Paciente" EntitySet="Paciente" />
       <End Role="Prontuario" EntitySet="Prontuario" />
     </AssociationSet>
@@ -349,7 +349,7 @@
     <Property Name="banho" Type="Boolean" Nullable="false" />
     <Property Name="tosa" Type="Boolean" Nullable="false" />
     <Property Name="diaHora" Type="DateTime" />
-    <NavigationProperty Name="Paciente" Relationship="clinicaModelModel.FK_BanhoTosa_Paciente" FromRole="BanhoTosa" ToRole="Paciente" />
+    <NavigationProperty Name="Paciente" Relationship="clinicaModel.FK_BanhoTosa_Paciente" FromRole="BanhoTosa" ToRole="Paciente" />
   </EntityType>
   <EntityType Name="Cliente">
     <Key>
@@ -357,8 +357,8 @@
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="idPessoa" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="Paciente" Relationship="clinicaModelModel.FK_Paciente_Cliente" FromRole="Cliente" ToRole="Paciente" />
-    <NavigationProperty Name="Pessoa" Relationship="clinicaModelModel.FR_Cliente_Pessoa" FromRole="Cliente" ToRole="Pessoa" />
+    <NavigationProperty Name="Paciente" Relationship="clinicaModel.FK_Paciente_Cliente" FromRole="Cliente" ToRole="Paciente" />
+    <NavigationProperty Name="Pessoa" Relationship="clinicaModel.FR_Cliente_Pessoa" FromRole="Cliente" ToRole="Pessoa" />
   </EntityType>
   <EntityType Name="Endereco">
     <Key>
@@ -370,7 +370,7 @@
     <Property Name="cidade" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="estado" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
     <Property Name="cep" Type="Int32" />
-    <NavigationProperty Name="EnderecoPessoa" Relationship="clinicaModelModel.FK_EnderecoPessoa_Endereco" FromRole="Endereco" ToRole="EnderecoPessoa" />
+    <NavigationProperty Name="EnderecoPessoa" Relationship="clinicaModel.FK_EnderecoPessoa_Endereco" FromRole="Endereco" ToRole="EnderecoPessoa" />
   </EntityType>
   <EntityType Name="EnderecoPessoa">
     <Key>
@@ -381,17 +381,17 @@
     <Property Name="idEndereco" Type="Int32" Nullable="false" />
     <Property Name="numero" Type="Int32" Nullable="false" />
     <Property Name="complemento" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="Endereco" Relationship="clinicaModelModel.FK_EnderecoPessoa_Endereco" FromRole="EnderecoPessoa" ToRole="Endereco" />
-    <NavigationProperty Name="Pessoa" Relationship="clinicaModelModel.FK_EnderecoPessoa_Pessoa" FromRole="EnderecoPessoa" ToRole="Pessoa" />
+    <NavigationProperty Name="Endereco" Relationship="clinicaModel.FK_EnderecoPessoa_Endereco" FromRole="EnderecoPessoa" ToRole="Endereco" />
+    <NavigationProperty Name="Pessoa" Relationship="clinicaModel.FK_EnderecoPessoa_Pessoa" FromRole="EnderecoPessoa" ToRole="Pessoa" />
   </EntityType>
   <EntityType Name="Especie">
     <Key>
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nome" Type="Int32" Nullable="false" />
+    <Property Name="nome" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
     <Property Name="descricao" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="Raca" Relationship="clinicaModelModel.FK_Raca_Especie" FromRole="Especie" ToRole="Raca" />
+    <NavigationProperty Name="Raca" Relationship="clinicaModel.FK_Raca_Especie" FromRole="Especie" ToRole="Raca" />
   </EntityType>
   <EntityType Name="Medico">
     <Key>
@@ -400,8 +400,8 @@
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="idPessoa" Type="Int32" Nullable="false" />
     <Property Name="crmv" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="Pessoa" Relationship="clinicaModelModel.FK_Medico_Pessoa" FromRole="Medico" ToRole="Pessoa" />
-    <NavigationProperty Name="Prontuario" Relationship="clinicaModelModel.FK_Prontuario_Medico" FromRole="Medico" ToRole="Prontuario" />
+    <NavigationProperty Name="Pessoa" Relationship="clinicaModel.FK_Medico_Pessoa" FromRole="Medico" ToRole="Pessoa" />
+    <NavigationProperty Name="Prontuario" Relationship="clinicaModel.FK_Prontuario_Medico" FromRole="Medico" ToRole="Prontuario" />
   </EntityType>
   <EntityType Name="Paciente">
     <Key>
@@ -414,10 +414,10 @@
     <Property Name="cor" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
     <Property Name="dataNascimento" Type="DateTime" />
     <Property Name="dataEntrada" Type="DateTime" />
-    <NavigationProperty Name="BanhoTosa" Relationship="clinicaModelModel.FK_BanhoTosa_Paciente" FromRole="Paciente" ToRole="BanhoTosa" />
-    <NavigationProperty Name="Cliente" Relationship="clinicaModelModel.FK_Paciente_Cliente" FromRole="Paciente" ToRole="Cliente" />
-    <NavigationProperty Name="Raca" Relationship="clinicaModelModel.FK_Paciente_Raca" FromRole="Paciente" ToRole="Raca" />
-    <NavigationProperty Name="Prontuario" Relationship="clinicaModelModel.FK_Prontuario_Paciente" FromRole="Paciente" ToRole="Prontuario" />
+    <NavigationProperty Name="BanhoTosa" Relationship="clinicaModel.FK_BanhoTosa_Paciente" FromRole="Paciente" ToRole="BanhoTosa" />
+    <NavigationProperty Name="Cliente" Relationship="clinicaModel.FK_Paciente_Cliente" FromRole="Paciente" ToRole="Cliente" />
+    <NavigationProperty Name="Raca" Relationship="clinicaModel.FK_Paciente_Raca" FromRole="Paciente" ToRole="Raca" />
+    <NavigationProperty Name="Prontuario" Relationship="clinicaModel.FK_Prontuario_Paciente" FromRole="Paciente" ToRole="Prontuario" />
   </EntityType>
   <EntityType Name="Pessoa">
     <Key>
@@ -427,9 +427,9 @@
     <Property Name="nome" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="telefone" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="email" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="Cliente" Relationship="clinicaModelModel.FR_Cliente_Pessoa" FromRole="Pessoa" ToRole="Cliente" />
-    <NavigationProperty Name="EnderecoPessoa" Relationship="clinicaModelModel.FK_EnderecoPessoa_Pessoa" FromRole="Pessoa" ToRole="EnderecoPessoa" />
-    <NavigationProperty Name="Medico" Relationship="clinicaModelModel.FK_Medico_Pessoa" FromRole="Pessoa" ToRole="Medico" />
+    <NavigationProperty Name="Cliente" Relationship="clinicaModel.FR_Cliente_Pessoa" FromRole="Pessoa" ToRole="Cliente" />
+    <NavigationProperty Name="EnderecoPessoa" Relationship="clinicaModel.FK_EnderecoPessoa_Pessoa" FromRole="Pessoa" ToRole="EnderecoPessoa" />
+    <NavigationProperty Name="Medico" Relationship="clinicaModel.FK_Medico_Pessoa" FromRole="Pessoa" ToRole="Medico" />
   </EntityType>
   <EntityType Name="Prontuario">
     <Key>
@@ -441,8 +441,8 @@
     <Property Name="texto" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="expressaoChave" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
     <Property Name="data" Type="DateTime" />
-    <NavigationProperty Name="Medico" Relationship="clinicaModelModel.FK_Prontuario_Medico" FromRole="Prontuario" ToRole="Medico" />
-    <NavigationProperty Name="Paciente" Relationship="clinicaModelModel.FK_Prontuario_Paciente" FromRole="Prontuario" ToRole="Paciente" />
+    <NavigationProperty Name="Medico" Relationship="clinicaModel.FK_Prontuario_Medico" FromRole="Prontuario" ToRole="Medico" />
+    <NavigationProperty Name="Paciente" Relationship="clinicaModel.FK_Prontuario_Paciente" FromRole="Prontuario" ToRole="Paciente" />
   </EntityType>
   <EntityType Name="Raca">
     <Key>
@@ -452,8 +452,8 @@
     <Property Name="idEspecie" Type="Int32" Nullable="false" />
     <Property Name="nome" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="descricao" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="Especie" Relationship="clinicaModelModel.FK_Raca_Especie" FromRole="Raca" ToRole="Especie" />
-    <NavigationProperty Name="Paciente" Relationship="clinicaModelModel.FK_Paciente_Raca" FromRole="Raca" ToRole="Paciente" />
+    <NavigationProperty Name="Especie" Relationship="clinicaModel.FK_Raca_Especie" FromRole="Raca" ToRole="Especie" />
+    <NavigationProperty Name="Paciente" Relationship="clinicaModel.FK_Paciente_Raca" FromRole="Raca" ToRole="Paciente" />
   </EntityType>
   <EntityType Name="Vacina">
     <Key>
@@ -466,8 +466,8 @@
     <Property Name="descricao" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
   </EntityType>
   <Association Name="FK_BanhoTosa_Paciente">
-    <End Role="Paciente" Type="clinicaModelModel.Paciente" Multiplicity="1" />
-    <End Role="BanhoTosa" Type="clinicaModelModel.BanhoTosa" Multiplicity="*" />
+    <End Role="Paciente" Type="clinicaModel.Paciente" Multiplicity="1" />
+    <End Role="BanhoTosa" Type="clinicaModel.BanhoTosa" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Paciente">
         <PropertyRef Name="id" />
@@ -478,8 +478,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Paciente_Cliente">
-    <End Role="Cliente" Type="clinicaModelModel.Cliente" Multiplicity="1" />
-    <End Role="Paciente" Type="clinicaModelModel.Paciente" Multiplicity="*" />
+    <End Role="Cliente" Type="clinicaModel.Cliente" Multiplicity="1" />
+    <End Role="Paciente" Type="clinicaModel.Paciente" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Cliente">
         <PropertyRef Name="id" />
@@ -490,8 +490,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FR_Cliente_Pessoa">
-    <End Role="Pessoa" Type="clinicaModelModel.Pessoa" Multiplicity="1" />
-    <End Role="Cliente" Type="clinicaModelModel.Cliente" Multiplicity="*" />
+    <End Role="Pessoa" Type="clinicaModel.Pessoa" Multiplicity="1" />
+    <End Role="Cliente" Type="clinicaModel.Cliente" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Pessoa">
         <PropertyRef Name="id" />
@@ -502,8 +502,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_EnderecoPessoa_Endereco">
-    <End Role="Endereco" Type="clinicaModelModel.Endereco" Multiplicity="1" />
-    <End Role="EnderecoPessoa" Type="clinicaModelModel.EnderecoPessoa" Multiplicity="*" />
+    <End Role="Endereco" Type="clinicaModel.Endereco" Multiplicity="1" />
+    <End Role="EnderecoPessoa" Type="clinicaModel.EnderecoPessoa" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Endereco">
         <PropertyRef Name="id" />
@@ -514,8 +514,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_EnderecoPessoa_Pessoa">
-    <End Role="Pessoa" Type="clinicaModelModel.Pessoa" Multiplicity="1" />
-    <End Role="EnderecoPessoa" Type="clinicaModelModel.EnderecoPessoa" Multiplicity="*" />
+    <End Role="Pessoa" Type="clinicaModel.Pessoa" Multiplicity="1" />
+    <End Role="EnderecoPessoa" Type="clinicaModel.EnderecoPessoa" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Pessoa">
         <PropertyRef Name="id" />
@@ -526,8 +526,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Raca_Especie">
-    <End Role="Especie" Type="clinicaModelModel.Especie" Multiplicity="1" />
-    <End Role="Raca" Type="clinicaModelModel.Raca" Multiplicity="*" />
+    <End Role="Especie" Type="clinicaModel.Especie" Multiplicity="1" />
+    <End Role="Raca" Type="clinicaModel.Raca" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Especie">
         <PropertyRef Name="id" />
@@ -538,8 +538,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Medico_Pessoa">
-    <End Role="Pessoa" Type="clinicaModelModel.Pessoa" Multiplicity="1" />
-    <End Role="Medico" Type="clinicaModelModel.Medico" Multiplicity="*" />
+    <End Role="Pessoa" Type="clinicaModel.Pessoa" Multiplicity="1" />
+    <End Role="Medico" Type="clinicaModel.Medico" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Pessoa">
         <PropertyRef Name="id" />
@@ -550,8 +550,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Prontuario_Medico">
-    <End Role="Medico" Type="clinicaModelModel.Medico" Multiplicity="1" />
-    <End Role="Prontuario" Type="clinicaModelModel.Prontuario" Multiplicity="*" />
+    <End Role="Medico" Type="clinicaModel.Medico" Multiplicity="1" />
+    <End Role="Prontuario" Type="clinicaModel.Prontuario" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Medico">
         <PropertyRef Name="id" />
@@ -562,8 +562,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Paciente_Raca">
-    <End Role="Raca" Type="clinicaModelModel.Raca" Multiplicity="1" />
-    <End Role="Paciente" Type="clinicaModelModel.Paciente" Multiplicity="*" />
+    <End Role="Raca" Type="clinicaModel.Raca" Multiplicity="1" />
+    <End Role="Paciente" Type="clinicaModel.Paciente" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Raca">
         <PropertyRef Name="id" />
@@ -574,8 +574,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Prontuario_Paciente">
-    <End Role="Paciente" Type="clinicaModelModel.Paciente" Multiplicity="1" />
-    <End Role="Prontuario" Type="clinicaModelModel.Prontuario" Multiplicity="*" />
+    <End Role="Paciente" Type="clinicaModel.Paciente" Multiplicity="1" />
+    <End Role="Prontuario" Type="clinicaModel.Prontuario" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Paciente">
         <PropertyRef Name="id" />
@@ -590,9 +590,9 @@
 <!-- C-S mapping content -->
 <edmx:Mappings>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="clinicaModelModelStoreContainer" CdmEntityContainer="clinicaModelEntities">
+  <EntityContainerMapping StorageEntityContainer="clinicaModelStoreContainer" CdmEntityContainer="clinicaEntities">
     <EntitySetMapping Name="BanhoTosa">
-      <EntityTypeMapping TypeName="clinicaModelModel.BanhoTosa">
+      <EntityTypeMapping TypeName="clinicaModel.BanhoTosa">
         <MappingFragment StoreEntitySet="BanhoTosa">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
@@ -603,7 +603,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Cliente">
-      <EntityTypeMapping TypeName="clinicaModelModel.Cliente">
+      <EntityTypeMapping TypeName="clinicaModel.Cliente">
         <MappingFragment StoreEntitySet="Cliente">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="idPessoa" ColumnName="idPessoa" />
@@ -611,7 +611,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Endereco">
-      <EntityTypeMapping TypeName="clinicaModelModel.Endereco">
+      <EntityTypeMapping TypeName="clinicaModel.Endereco">
         <MappingFragment StoreEntitySet="Endereco">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="rua" ColumnName="rua" />
@@ -623,7 +623,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EnderecoPessoa">
-      <EntityTypeMapping TypeName="clinicaModelModel.EnderecoPessoa">
+      <EntityTypeMapping TypeName="clinicaModel.EnderecoPessoa">
         <MappingFragment StoreEntitySet="EnderecoPessoa">
           <ScalarProperty Name="idPessoa" ColumnName="idPessoa" />
           <ScalarProperty Name="idEndereco" ColumnName="idEndereco" />
@@ -633,7 +633,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Especie">
-      <EntityTypeMapping TypeName="clinicaModelModel.Especie">
+      <EntityTypeMapping TypeName="clinicaModel.Especie">
         <MappingFragment StoreEntitySet="Especie">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="nome" ColumnName="nome" />
@@ -642,7 +642,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Medico">
-      <EntityTypeMapping TypeName="clinicaModelModel.Medico">
+      <EntityTypeMapping TypeName="clinicaModel.Medico">
         <MappingFragment StoreEntitySet="Medico">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="idPessoa" ColumnName="idPessoa" />
@@ -651,7 +651,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Paciente">
-      <EntityTypeMapping TypeName="clinicaModelModel.Paciente">
+      <EntityTypeMapping TypeName="clinicaModel.Paciente">
         <MappingFragment StoreEntitySet="Paciente">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="idRaca" ColumnName="idRaca" />
@@ -664,7 +664,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Pessoa">
-      <EntityTypeMapping TypeName="clinicaModelModel.Pessoa">
+      <EntityTypeMapping TypeName="clinicaModel.Pessoa">
         <MappingFragment StoreEntitySet="Pessoa">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="nome" ColumnName="nome" />
@@ -674,7 +674,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Prontuario">
-      <EntityTypeMapping TypeName="clinicaModelModel.Prontuario">
+      <EntityTypeMapping TypeName="clinicaModel.Prontuario">
         <MappingFragment StoreEntitySet="Prontuario">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
@@ -686,7 +686,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Raca">
-      <EntityTypeMapping TypeName="clinicaModelModel.Raca">
+      <EntityTypeMapping TypeName="clinicaModel.Raca">
         <MappingFragment StoreEntitySet="Raca">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="idEspecie" ColumnName="idEspecie" />
@@ -696,7 +696,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Vacina">
-      <EntityTypeMapping TypeName="clinicaModelModel.Vacina">
+      <EntityTypeMapping TypeName="clinicaModel.Vacina">
         <MappingFragment StoreEntitySet="Vacina">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="nome" ColumnName="nome" />
@@ -715,64 +715,64 @@
 <Connection><DesignerInfoPropertySet><DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" /></DesignerInfoPropertySet></Connection>
 <edmx:Options><DesignerInfoPropertySet><DesignerProperty Name="ValidateOnBuild" Value="True" /><DesignerProperty Name="EnablePluralization" Value="False" /><DesignerProperty Name="IncludeForeignKeysInModel" Value="True" /><DesignerProperty Name="CodeGenerationStrategy" Value="Default" /></DesignerInfoPropertySet></edmx:Options>
 <edmx:Diagrams >
-      <Diagram Name="clinicaModel">
-        <EntityTypeShape EntityType="clinicaModelModel.BanhoTosa" Width="1.5" PointX="7.5" PointY="4.5" Height="2.1725878906249996" IsExpanded="true" />
-        <EntityTypeShape EntityType="clinicaModelModel.Cliente" Width="1.5" PointX="3" PointY="4.75" Height="1.7879850260416657" IsExpanded="true" />
-        <EntityTypeShape EntityType="clinicaModelModel.Endereco" Width="1.5" PointX="3.75" PointY="13.75" Height="2.3648893229166674" IsExpanded="true" />
-        <EntityTypeShape EntityType="clinicaModelModel.EnderecoPessoa" Width="1.5" PointX="6" PointY="8.875" Height="2.1725878906249996" IsExpanded="true" />
-        <EntityTypeShape EntityType="clinicaModelModel.Especie" Width="1.5" PointX="0.75" PointY="1.75" Height="1.7879850260416674" IsExpanded="true" />
-        <EntityTypeShape EntityType="clinicaModelModel.Medico" Width="1.5" PointX="3" PointY="10.125" Height="1.9802864583333317" IsExpanded="true" />
-        <EntityTypeShape EntityType="clinicaModelModel.Paciente" Width="1.5" PointX="5.25" PointY="4" Height="3.1340950520833317" IsExpanded="true" />
-        <EntityTypeShape EntityType="clinicaModelModel.Pessoa" Width="1.5" PointX="0.75" PointY="5.75" Height="2.3648893229166665" IsExpanded="true" />
-        <EntityTypeShape EntityType="clinicaModelModel.Prontuario" Width="1.5" PointX="8.5" PointY="7.75" Height="2.5571907552083317" IsExpanded="true" />
-        <EntityTypeShape EntityType="clinicaModelModel.Raca" Width="1.5" PointX="3" PointY="1.5" Height="2.1725878906249996" IsExpanded="true" />
-        <EntityTypeShape EntityType="clinicaModelModel.Vacina" Width="1.5" PointX="5.75" PointY="0.75" Height="1.9802864583333353" IsExpanded="true" />
-        <AssociationConnector Association="clinicaModelModel.FK_BanhoTosa_Paciente" ManuallyRouted="false">
+      <Diagram Name="clinica">
+        <EntityTypeShape EntityType="clinicaModel.BanhoTosa" Width="1.5" PointX="7.5" PointY="4.5" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="clinicaModel.Cliente" Width="1.5" PointX="3" PointY="4.75" Height="1.7879850260416657" IsExpanded="true" />
+        <EntityTypeShape EntityType="clinicaModel.Endereco" Width="1.5" PointX="3.75" PointY="13.75" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="clinicaModel.EnderecoPessoa" Width="1.5" PointX="6" PointY="8.875" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="clinicaModel.Especie" Width="1.5" PointX="0.75" PointY="1.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="clinicaModel.Medico" Width="1.5" PointX="3" PointY="10.125" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="clinicaModel.Paciente" Width="1.5" PointX="5.25" PointY="4" Height="3.1340950520833317" IsExpanded="true" />
+        <EntityTypeShape EntityType="clinicaModel.Pessoa" Width="1.5" PointX="0.75" PointY="5.75" Height="2.3648893229166665" IsExpanded="true" />
+        <EntityTypeShape EntityType="clinicaModel.Prontuario" Width="1.5" PointX="8.5" PointY="7.75" Height="2.5571907552083317" IsExpanded="true" />
+        <EntityTypeShape EntityType="clinicaModel.Raca" Width="1.5" PointX="3" PointY="1.5" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="clinicaModel.Vacina" Width="1.5" PointX="5.75" PointY="0.75" Height="1.9802864583333353" IsExpanded="true" />
+        <AssociationConnector Association="clinicaModel.FK_BanhoTosa_Paciente" ManuallyRouted="false">
           <ConnectorPoint PointX="6.75" PointY="5.5862939453125" />
           <ConnectorPoint PointX="7.5" PointY="5.5862939453125" />
         </AssociationConnector>
-        <AssociationConnector Association="clinicaModelModel.FK_Paciente_Cliente" ManuallyRouted="false">
+        <AssociationConnector Association="clinicaModel.FK_Paciente_Cliente" ManuallyRouted="false">
           <ConnectorPoint PointX="4.5" PointY="5.6439925130208328" />
           <ConnectorPoint PointX="5.25" PointY="5.6439925130208328" />
         </AssociationConnector>
-        <AssociationConnector Association="clinicaModelModel.FR_Cliente_Pessoa" ManuallyRouted="false">
+        <AssociationConnector Association="clinicaModel.FR_Cliente_Pessoa" ManuallyRouted="false">
           <ConnectorPoint PointX="2.25" PointY="6.1439925130208328" />
           <ConnectorPoint PointX="3" PointY="6.1439925130208328" />
         </AssociationConnector>
-        <AssociationConnector Association="clinicaModelModel.FK_EnderecoPessoa_Endereco" ManuallyRouted="false">
+        <AssociationConnector Association="clinicaModel.FK_EnderecoPessoa_Endereco" ManuallyRouted="false">
           <ConnectorPoint PointX="4.90625" PointY="13.75" />
           <ConnectorPoint PointX="4.90625" PointY="9.46875" />
           <ConnectorPoint PointX="6" PointY="9.46875" />
         </AssociationConnector>
-        <AssociationConnector Association="clinicaModelModel.FK_EnderecoPessoa_Pessoa" ManuallyRouted="false">
+        <AssociationConnector Association="clinicaModel.FK_EnderecoPessoa_Pessoa" ManuallyRouted="false">
           <ConnectorPoint PointX="1.5" PointY="8.1148893229166674" />
           <ConnectorPoint PointX="1.5" PointY="9.1406225" />
           <ConnectorPoint PointX="1.8229191666666667" PointY="9.1406225" />
           <ConnectorPoint PointX="1.9895858333333332" PointY="9.1406225" />
           <ConnectorPoint PointX="6" PointY="9.1406225" />
         </AssociationConnector>
-        <AssociationConnector Association="clinicaModelModel.FK_Raca_Especie" ManuallyRouted="false">
+        <AssociationConnector Association="clinicaModel.FK_Raca_Especie" ManuallyRouted="false">
           <ConnectorPoint PointX="2.25" PointY="2.6439925130208337" />
           <ConnectorPoint PointX="3" PointY="2.6439925130208337" />
         </AssociationConnector>
-        <AssociationConnector Association="clinicaModelModel.FK_Medico_Pessoa" ManuallyRouted="false">
+        <AssociationConnector Association="clinicaModel.FK_Medico_Pessoa" ManuallyRouted="false">
           <ConnectorPoint PointX="1.9062525" PointY="8.1148893229166674" />
           <ConnectorPoint PointX="1.9062525" PointY="11.115143229166666" />
           <ConnectorPoint PointX="3" PointY="11.115143229166666" />
         </AssociationConnector>
-        <AssociationConnector Association="clinicaModelModel.FK_Prontuario_Medico" ManuallyRouted="false">
+        <AssociationConnector Association="clinicaModel.FK_Prontuario_Medico" ManuallyRouted="false">
           <ConnectorPoint PointX="4.5" PointY="11.607687174479166" />
           <ConnectorPoint PointX="4.822916666666667" PointY="11.607687174479166" />
           <ConnectorPoint PointX="4.989583333333333" PointY="11.607687174479166" />
           <ConnectorPoint PointX="9.25" PointY="11.607687174479166" />
           <ConnectorPoint PointX="9.25" PointY="10.307190755208332" />
         </AssociationConnector>
-        <AssociationConnector Association="clinicaModelModel.FK_Paciente_Raca" ManuallyRouted="false">
+        <AssociationConnector Association="clinicaModel.FK_Paciente_Raca" ManuallyRouted="false">
           <ConnectorPoint PointX="4.5" PointY="3.2326871744791674" />
           <ConnectorPoint PointX="5.46875" PointY="3.2326871744791674" />
           <ConnectorPoint PointX="5.46875" PointY="4" />
         </AssociationConnector>
-        <AssociationConnector Association="clinicaModelModel.FK_Prontuario_Paciente" ManuallyRouted="false">
+        <AssociationConnector Association="clinicaModel.FK_Prontuario_Paciente" ManuallyRouted="false">
           <ConnectorPoint PointX="6.75" PointY="4.21875" />
           <ConnectorPoint PointX="9.53125" PointY="4.21875" />
           <ConnectorPoint PointX="9.53125" PointY="7.75" />

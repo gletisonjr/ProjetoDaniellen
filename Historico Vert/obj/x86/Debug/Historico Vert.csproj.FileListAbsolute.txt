@@ -1,79 +1,22 @@
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.exe.config
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico Vert.exe
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico Vert.pdb
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.exe
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.pdb
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.dll
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.SqlServerCompact.dll
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\System.Data.SQLite.dll
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\System.Data.SQLite.EF6.dll
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\System.Data.SQLite.Linq.dll
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\System.Data.SqlServerCe.dll
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.xml
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.SqlServerCompact.xml
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\System.Data.SQLite.xml
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico Vert.csprojResolveAssemblyReference.cache
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.BanhoTosa.AddBanhoTosa.resources
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.BanhoTosa.PesquisaBanhoTosa.resources
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.Configuracoes.Configuracoes.resources
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.Especie.PesquisaEspecie.resources
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.AddPaciente.resources
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.AddEspecie.resources
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.Form1.resources
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.Paciente.PesquisaPaciente.resources
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.Pessoa.AddPessoa.resources
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.Pessoa.PesquisaPessoa.resources
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.Principal.Inicio.resources
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.Prontuario.AddProntuario.resources
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.Raca.PesquisaRaca.resources
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.Pessoa.AddVacina.resources
+C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Especie.AddEspecie.resources
+C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Especie.PesquisaEspecie.resources
+C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Form1.resources
+C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Principal.Inicio.resources
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.Properties.Resources.resources
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.PesquisaProntuario.resources
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.AddRaca.resources
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.Vacina.PesquisaVacina.resources
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico Vert.csproj.GenerateResource.Cache
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\RdlCompile.cache
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\RdlCompile.compiled
-<<<<<<< HEAD
-=======
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.exe
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.pdb
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico Vert.exe
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico Vert.pdb
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico Vert.csprojResolveAssemblyReference.cache
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.Configuracoes.Configuracoes.resources
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.Properties.Resources.resources
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico Vert.csproj.GenerateResource.Cache
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\RdlCompile.cache
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\RdlCompile.compiled
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.exe
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.pdb
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.exe.config
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.dll
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.SqlServer.dll
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.xml
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.exe.config
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.SqlServerCompact.dll
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\System.Data.SqlServerCe.dll
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.SqlServerCompact.xml
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.BanhoTosa.AddBanhoTosa.resources
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.BanhoTosa.PesquisaBanhoTosa.resources
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Especie.PesquisaEspecie.resources
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Paciente.AddPaciente.resources
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Especie.AddEspecie.resources
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Form1.resources
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Paciente.PesquisaPaciente.resources
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Pessoa.AddPessoa.resources
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Pessoa.PesquisaPessoa.resources
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Principal.Inicio.resources
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Prontuario.AddProntuario.resources
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Raca.PesquisaRaca.resources
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Raca.AddVacina.resources
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Prontuario.PesquisaProntuario.resources
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Raca.AddRaca.resources
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Vacina.PesquisaVacina.resources
-D:\Projetos\Prontuario Daniellen\ProjetoDaniellen\Historico Vert\bin\Debug\Clinica.sdf
->>>>>>> origin/master
+C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico Vert.exe
+C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico Vert.pdb

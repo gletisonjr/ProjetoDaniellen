@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="clinicaModelModelStoreContainer" CdmEntityContainer="clinicaModelEntities">
+  <EntityContainerMapping StorageEntityContainer="clinicaModelStoreContainer" CdmEntityContainer="clinicaEntities">
     <EntitySetMapping Name="BanhoTosa">
-      <EntityTypeMapping TypeName="clinicaModelModel.BanhoTosa">
+      <EntityTypeMapping TypeName="clinicaModel.BanhoTosa">
         <MappingFragment StoreEntitySet="BanhoTosa">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
@@ -13,7 +13,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Cliente">
-      <EntityTypeMapping TypeName="clinicaModelModel.Cliente">
+      <EntityTypeMapping TypeName="clinicaModel.Cliente">
         <MappingFragment StoreEntitySet="Cliente">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="idPessoa" ColumnName="idPessoa" />
@@ -21,7 +21,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Endereco">
-      <EntityTypeMapping TypeName="clinicaModelModel.Endereco">
+      <EntityTypeMapping TypeName="clinicaModel.Endereco">
         <MappingFragment StoreEntitySet="Endereco">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="rua" ColumnName="rua" />
@@ -33,7 +33,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EnderecoPessoa">
-      <EntityTypeMapping TypeName="clinicaModelModel.EnderecoPessoa">
+      <EntityTypeMapping TypeName="clinicaModel.EnderecoPessoa">
         <MappingFragment StoreEntitySet="EnderecoPessoa">
           <ScalarProperty Name="idPessoa" ColumnName="idPessoa" />
           <ScalarProperty Name="idEndereco" ColumnName="idEndereco" />
@@ -43,7 +43,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Especie">
-      <EntityTypeMapping TypeName="clinicaModelModel.Especie">
+      <EntityTypeMapping TypeName="clinicaModel.Especie">
         <MappingFragment StoreEntitySet="Especie">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="nome" ColumnName="nome" />
@@ -52,7 +52,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Medico">
-      <EntityTypeMapping TypeName="clinicaModelModel.Medico">
+      <EntityTypeMapping TypeName="clinicaModel.Medico">
         <MappingFragment StoreEntitySet="Medico">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="idPessoa" ColumnName="idPessoa" />
@@ -61,7 +61,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Paciente">
-      <EntityTypeMapping TypeName="clinicaModelModel.Paciente">
+      <EntityTypeMapping TypeName="clinicaModel.Paciente">
         <MappingFragment StoreEntitySet="Paciente">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="idRaca" ColumnName="idRaca" />
@@ -74,7 +74,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Pessoa">
-      <EntityTypeMapping TypeName="clinicaModelModel.Pessoa">
+      <EntityTypeMapping TypeName="clinicaModel.Pessoa">
         <MappingFragment StoreEntitySet="Pessoa">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="nome" ColumnName="nome" />
@@ -84,7 +84,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Prontuario">
-      <EntityTypeMapping TypeName="clinicaModelModel.Prontuario">
+      <EntityTypeMapping TypeName="clinicaModel.Prontuario">
         <MappingFragment StoreEntitySet="Prontuario">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
@@ -96,7 +96,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Raca">
-      <EntityTypeMapping TypeName="clinicaModelModel.Raca">
+      <EntityTypeMapping TypeName="clinicaModel.Raca">
         <MappingFragment StoreEntitySet="Raca">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="idEspecie" ColumnName="idEspecie" />
@@ -106,7 +106,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Vacina">
-      <EntityTypeMapping TypeName="clinicaModelModel.Vacina">
+      <EntityTypeMapping TypeName="clinicaModel.Vacina">
         <MappingFragment StoreEntitySet="Vacina">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="nome" ColumnName="nome" />

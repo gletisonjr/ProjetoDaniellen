@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Historico_Vert.Data;
 
 namespace Historico_Vert.GUI.Especie
 {
@@ -33,6 +34,13 @@ namespace Historico_Vert.GUI.Especie
 
         private void btnAcao_Click(object sender, EventArgs e)
         {
+            var especie = new Data.Especie();
+
+            especie.nome = txtNome.Text;
+            especie.descricao = txtDescricao.Text;
+
+            DataContext.Save(especie);
+
             MessageBox.Show("Cadastro efetuado com sucesso!", "Cadastro de Espécie", MessageBoxButtons.OK, MessageBoxIcon.Information);
             form.DefineEvent("Inicio", new Object());
         }
