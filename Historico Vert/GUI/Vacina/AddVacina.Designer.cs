@@ -1,4 +1,4 @@
-﻿namespace Historico_Vert.Pessoa
+﻿namespace Historico_Vert.GUI.Raca
 {
     partial class AddVacina
     {

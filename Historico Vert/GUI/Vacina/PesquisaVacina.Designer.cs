@@ -1,4 +1,4 @@
-﻿namespace Historico_Vert.Vacina
+﻿namespace Historico_Vert.GUI.Vacina
 {
     partial class PesquisaVacina
     {

@@ -6,17 +6,17 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Historico_Vert.Pessoa;
-using Historico_Vert.Prontuario;
-using Historico_Vert.Paciente;
-using Historico_Vert.Especie;
-using Historico_Vert.Raca;
-using Historico_Vert.Vacina;
-using Historico_Vert.BanhoTosa;
-using Historico_Vert.Principal;
+using Historico_Vert.GUI.Pessoa;
+using Historico_Vert.GUI.Prontuario;
+using Historico_Vert.GUI.Paciente;
+using Historico_Vert.GUI.Especie;
+using Historico_Vert.GUI.Raca;
+using Historico_Vert.GUI.Vacina;
+using Historico_Vert.GUI.BanhoTosa;
+using Historico_Vert.GUI.Principal;
 
 
-namespace Historico_Vert.Principal
+namespace Historico_Vert.GUI.Principal
 {
     public partial class Inicio : UserControl
     {

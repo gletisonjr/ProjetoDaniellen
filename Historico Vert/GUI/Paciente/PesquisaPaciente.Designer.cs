@@ -1,4 +1,4 @@
-﻿namespace Historico_Vert.Paciente
+﻿namespace Historico_Vert.GUI.Paciente
 {
     partial class PesquisaPaciente
     {

@@ -1,4 +1,4 @@
-﻿namespace Historico_Vert.Especie
+﻿namespace Historico_Vert.GUI.Especie
 {
     partial class PesquisaEspecie
     {

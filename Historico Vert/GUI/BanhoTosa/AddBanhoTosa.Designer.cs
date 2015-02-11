@@ -1,4 +1,4 @@
-﻿namespace Historico_Vert.BanhoTosa
+﻿namespace Historico_Vert.GUI.BanhoTosa
 {
     partial class AddBanhoTosa
     {

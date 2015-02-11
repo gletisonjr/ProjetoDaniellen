@@ -1,4 +1,4 @@
-﻿namespace Historico_Vert.Pessoa
+﻿namespace Historico_Vert.GUI.Pessoa
 {
     partial class AddPessoa
     {
@@ -94,7 +94,7 @@
             this.btAcao.Location = new System.Drawing.Point(643, 250);
             this.btAcao.Name = "btAcao";
             this.btAcao.Size = new System.Drawing.Size(116, 33);
-            this.btAcao.TabIndex = 29;
+            this.btAcao.TabIndex = 25;
             this.btAcao.Text = "Adicionar";
             this.btAcao.UseVisualStyleBackColor = true;
             this.btAcao.Click += new System.EventHandler(this.btAcao_Click);
@@ -104,7 +104,7 @@
             this.txtCRMV.Location = new System.Drawing.Point(365, 30);
             this.txtCRMV.Name = "txtCRMV";
             this.txtCRMV.Size = new System.Drawing.Size(132, 20);
-            this.txtCRMV.TabIndex = 28;
+            this.txtCRMV.TabIndex = 5;
             this.txtCRMV.Visible = false;
             // 
             // lblCRMV
@@ -113,7 +113,7 @@
             this.lblCRMV.Location = new System.Drawing.Point(321, 33);
             this.lblCRMV.Name = "lblCRMV";
             this.lblCRMV.Size = new System.Drawing.Size(38, 13);
-            this.lblCRMV.TabIndex = 27;
+            this.lblCRMV.TabIndex = 4;
             this.lblCRMV.Text = "CRMV";
             this.lblCRMV.Visible = false;
             // 
@@ -122,7 +122,7 @@
             this.txtCompEndereco.Location = new System.Drawing.Point(628, 96);
             this.txtCompEndereco.Name = "txtCompEndereco";
             this.txtCompEndereco.Size = new System.Drawing.Size(120, 20);
-            this.txtCompEndereco.TabIndex = 26;
+            this.txtCompEndereco.TabIndex = 12;
             // 
             // lblComp
             // 
@@ -131,7 +131,7 @@
             this.lblComp.Location = new System.Drawing.Point(551, 99);
             this.lblComp.Name = "lblComp";
             this.lblComp.Size = new System.Drawing.Size(71, 13);
-            this.lblComp.TabIndex = 25;
+            this.lblComp.TabIndex = 11;
             this.lblComp.Text = "Complemento";
             // 
             // txtEstado
@@ -140,7 +140,7 @@
             this.txtEstado.Mask = "LL";
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(27, 20);
-            this.txtEstado.TabIndex = 24;
+            this.txtEstado.TabIndex = 18;
             this.txtEstado.Text = "MG";
             // 
             // lblEstado
@@ -150,7 +150,7 @@
             this.lblEstado.Location = new System.Drawing.Point(53, 162);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(40, 13);
-            this.lblEstado.TabIndex = 23;
+            this.lblEstado.TabIndex = 17;
             this.lblEstado.Text = "Estado";
             // 
             // txtCEP
@@ -159,7 +159,7 @@
             this.txtCEP.Mask = "00000-000#";
             this.txtCEP.Name = "txtCEP";
             this.txtCEP.Size = new System.Drawing.Size(66, 20);
-            this.txtCEP.TabIndex = 22;
+            this.txtCEP.TabIndex = 20;
             // 
             // lblCEP
             // 
@@ -168,7 +168,7 @@
             this.lblCEP.Location = new System.Drawing.Point(404, 169);
             this.lblCEP.Name = "lblCEP";
             this.lblCEP.Size = new System.Drawing.Size(28, 13);
-            this.lblCEP.TabIndex = 21;
+            this.lblCEP.TabIndex = 19;
             this.lblCEP.Text = "CEP";
             // 
             // lblCidade
@@ -177,7 +177,7 @@
             this.lblCidade.Location = new System.Drawing.Point(404, 135);
             this.lblCidade.Name = "lblCidade";
             this.lblCidade.Size = new System.Drawing.Size(40, 13);
-            this.lblCidade.TabIndex = 20;
+            this.lblCidade.TabIndex = 15;
             this.lblCidade.Text = "Cidade";
             // 
             // txtCidade
@@ -192,14 +192,14 @@
             this.txtCidade.Location = new System.Drawing.Point(463, 131);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(285, 20);
-            this.txtCidade.TabIndex = 19;
+            this.txtCidade.TabIndex = 16;
             // 
             // txtNumRua
             // 
             this.txtNumRua.Location = new System.Drawing.Point(463, 99);
             this.txtNumRua.Name = "txtNumRua";
             this.txtNumRua.Size = new System.Drawing.Size(66, 20);
-            this.txtNumRua.TabIndex = 18;
+            this.txtNumRua.TabIndex = 10;
             // 
             // lblNumRua
             // 
@@ -208,7 +208,7 @@
             this.lblNumRua.Location = new System.Drawing.Point(404, 99);
             this.lblNumRua.Name = "lblNumRua";
             this.lblNumRua.Size = new System.Drawing.Size(44, 13);
-            this.lblNumRua.TabIndex = 17;
+            this.lblNumRua.TabIndex = 9;
             this.lblNumRua.Text = "Numero";
             // 
             // lblBairro
@@ -217,7 +217,7 @@
             this.lblBairro.Location = new System.Drawing.Point(53, 131);
             this.lblBairro.Name = "lblBairro";
             this.lblBairro.Size = new System.Drawing.Size(34, 13);
-            this.lblBairro.TabIndex = 16;
+            this.lblBairro.TabIndex = 13;
             this.lblBairro.Text = "Bairro";
             // 
             // txtBairro
@@ -232,7 +232,7 @@
             this.txtBairro.Location = new System.Drawing.Point(95, 128);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(275, 20);
-            this.txtBairro.TabIndex = 15;
+            this.txtBairro.TabIndex = 14;
             // 
             // lblRua
             // 
@@ -240,7 +240,7 @@
             this.lblRua.Location = new System.Drawing.Point(53, 99);
             this.lblRua.Name = "lblRua";
             this.lblRua.Size = new System.Drawing.Size(27, 13);
-            this.lblRua.TabIndex = 14;
+            this.lblRua.TabIndex = 7;
             this.lblRua.Text = "Rua";
             // 
             // txtEmail
@@ -248,7 +248,7 @@
             this.txtEmail.Location = new System.Drawing.Point(79, 250);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(273, 20);
-            this.txtEmail.TabIndex = 13;
+            this.txtEmail.TabIndex = 24;
             // 
             // lblEmail
             // 
@@ -256,7 +256,7 @@
             this.lblEmail.Location = new System.Drawing.Point(20, 250);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(35, 13);
-            this.lblEmail.TabIndex = 12;
+            this.lblEmail.TabIndex = 23;
             this.lblEmail.Text = "E-mail";
             // 
             // txtTelefone
@@ -265,7 +265,7 @@
             this.txtTelefone.Mask = "(00) 0000-0000#";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(100, 20);
-            this.txtTelefone.TabIndex = 11;
+            this.txtTelefone.TabIndex = 22;
             // 
             // label1
             // 
@@ -274,7 +274,7 @@
             this.label1.Location = new System.Drawing.Point(20, 215);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
-            this.label1.TabIndex = 10;
+            this.label1.TabIndex = 21;
             this.label1.Text = "Telefone";
             // 
             // lblEndereco
@@ -283,7 +283,7 @@
             this.lblEndereco.Location = new System.Drawing.Point(20, 65);
             this.lblEndereco.Name = "lblEndereco";
             this.lblEndereco.Size = new System.Drawing.Size(53, 13);
-            this.lblEndereco.TabIndex = 9;
+            this.lblEndereco.TabIndex = 6;
             this.lblEndereco.Text = "Endereço";
             // 
             // txtRua

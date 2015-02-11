@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Historico_Vert.Pessoa
+namespace Historico_Vert.GUI.Raca
 {
     public partial class AddVacina : UserControl
     {

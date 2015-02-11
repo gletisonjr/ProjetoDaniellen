@@ -1,19 +1,19 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using Historico_Vert.BanhoTosa;
-using Historico_Vert.Especie;
-using Historico_Vert.Paciente;
-using Historico_Vert.Pessoa;
-using Historico_Vert.Principal;
-using Historico_Vert.Prontuario;
-using Historico_Vert.Raca;
-using Historico_Vert.Vacina;
+using System.Data;
+using Historico_Vert.GUI.Prontuario;
+using Historico_Vert.GUI.Paciente;
 using Historico_Vert.DAO;
-using System.Data.SQLite;
+using Historico_Vert.GUI.Pessoa;
+using Historico_Vert.GUI.Especie;
+using Historico_Vert.GUI.Raca;
+using Historico_Vert.GUI.Vacina;
+using Historico_Vert.GUI.BanhoTosa;
+using Historico_Vert.GUI.Principal;
 
 
-namespace Historico_Vert
+namespace Historico_Vert.GUI
 {
     public partial class Form1 : Form
     {
@@ -22,7 +22,7 @@ namespace Historico_Vert
         {
             InitializeComponent();
             var con = new Connection();
-            con.Connect();
+            //con.Connect();
         }
      
         private void Form1_Load(object sender, EventArgs e)
@@ -134,7 +134,8 @@ namespace Historico_Vert
             if (sender is Data.Pessoa)
             {
                 pessoa.SetBtAcao_Text("Atualizar");
-                pessoa.pessoa = (Data.Pessoa)sender;
+                pessoa.pessoa = (Data.Pessoa) sender;
+                pessoa.ColocarDadosTela();
             }
             Controls.Add(pessoa);
             Show(pessoa);
@@ -144,6 +145,10 @@ namespace Historico_Vert
         {
             ClearForm();
             var pessoa = new PesquisaPessoa(this);
+            if (sender is Data.Pessoa)
+            {
+                pessoa.ColocarDadosTela((Data.Pessoa)sender);
+            }
             Controls.Add(pessoa);
             Show(pessoa);
         }
@@ -198,6 +203,10 @@ namespace Historico_Vert
         {
             ClearForm();
             var vet = new PesquisaPessoa(this);
+            if (sender is Data.Pessoa)
+            {
+                vet.ColocarDadosTela((Data.Pessoa)sender);
+            }
             vet.PesquisaMedico();
             Controls.Add(vet);
             Show(vet);

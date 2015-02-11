@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using Historico_Vert.Data;
 
-namespace Historico_Vert.Pessoa
+namespace Historico_Vert.GUI.Pessoa
 {
     public partial class AddPessoa : UserControl
     {
@@ -46,7 +46,11 @@ namespace Historico_Vert.Pessoa
             {
                 MessageBox.Show("Cadastro efetuado com sucesso!", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            form.DefineEvent("Inicio", new Object());
+            if (grbPessoa.Text.Equals("Dados do Médico Veterinário"))
+                form.DefineEvent("MedicoPesquisar", pessoa);
+            else
+                form.DefineEvent("DonoPesquisar", pessoa);
+            //form.DefineEvent("Inicio", pessoa);
         }
 
         public void SetBtAcao_Text(String text)
@@ -61,7 +65,7 @@ namespace Historico_Vert.Pessoa
             txtCRMV.Visible = true;
         }
 
-        private void ColocarDadosTela()
+        public void ColocarDadosTela()
         {
             if( this.pessoa is Medico)
             {

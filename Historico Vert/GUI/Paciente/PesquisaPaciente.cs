@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Historico_Vert.Paciente
+namespace Historico_Vert.GUI.Paciente
 {
     public partial class PesquisaPaciente : UserControl
     {
