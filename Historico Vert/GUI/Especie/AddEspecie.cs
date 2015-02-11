@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Historico_Vert
+namespace Historico_Vert.GUI.Especie
 {
     public partial class AddEspecie : UserControl
     {

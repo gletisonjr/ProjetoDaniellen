@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Data.SQLite;
 using System.Windows.Forms;
 using System.IO;
 
@@ -10,8 +9,10 @@ namespace Historico_Vert.DAO
 {
     class Connection
     {
-        public SQLiteConnection conn { get; private set; }
-        public SQLiteCommand cmd { get; set; }
+        public Connection() { }
+
+       /* public SQLConnection conn { get; private set; }
+        public SQCommand cmd { get; set; }
         public String statement { get; set; }
 
         public Connection()
@@ -59,7 +60,7 @@ namespace Historico_Vert.DAO
 
             return true;
 
-        }
+        }*/
 
 
 

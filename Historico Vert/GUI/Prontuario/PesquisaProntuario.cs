@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Historico_Vert
+namespace Historico_Vert.GUI.Prontuario
 {
     public partial class PesquisaProntuario : UserControl
     {

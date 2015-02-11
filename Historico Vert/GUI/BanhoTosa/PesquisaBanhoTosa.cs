@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Historico_Vert.BanhoTosa
+namespace Historico_Vert.GUI.BanhoTosa
 {
     public partial class PesquisaBanhoTosa : UserControl
     {

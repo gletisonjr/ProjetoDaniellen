@@ -1,4 +1,4 @@
-﻿namespace Historico_Vert.Raca
+﻿namespace Historico_Vert.GUI.Raca
 {
     partial class PesquisaRaca
     {

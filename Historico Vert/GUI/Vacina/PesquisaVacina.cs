@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Historico_Vert.Vacina
+namespace Historico_Vert.GUI.Vacina
 {
     public partial class PesquisaVacina : UserControl
     {

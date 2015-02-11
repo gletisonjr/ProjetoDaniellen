@@ -1,4 +1,4 @@
-﻿namespace Historico_Vert.Prontuario
+﻿namespace Historico_Vert.GUI.Prontuario
 {
     partial class AddProntuario
     {

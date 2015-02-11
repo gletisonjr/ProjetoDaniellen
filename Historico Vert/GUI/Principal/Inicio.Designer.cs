@@ -1,4 +1,4 @@
-﻿namespace Historico_Vert.Principal
+﻿namespace Historico_Vert.GUI.Principal
 {
     partial class Inicio
     {
