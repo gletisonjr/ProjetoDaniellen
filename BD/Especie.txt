@@ -1,7 +1,0 @@
--- Script Date: 23/01/2015 15:57  - ErikEJ.SqlCeScripting version 3.5.2.43
-CREATE TABLE [Especie] (
-  [id] int IDENTITY (1,1) NOT NULL
-, [nome] int NOT NULL
-, [descricao] nvarchar(50)
-,CONSTRAINT [PK_Especie] PRIMARY KEY ([id])
-);

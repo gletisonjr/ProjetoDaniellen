@@ -87,8 +87,6 @@ namespace Historico_Vert.GUI.Pessoa
 
         private void AtualizaPessoa()
         {
-            Cliente cliente;
-            Medico medico;
             Endereco endereco = new Endereco();
             endereco.rua = txtRua.Text;
             endereco.numero = txtNumRua.Text;
@@ -101,47 +99,26 @@ namespace Historico_Vert.GUI.Pessoa
             {
                 if (grbPessoa.Text.Equals("Dados do Dono"))
                 {
-                    cliente = new Cliente();
-                    cliente.endereco = endereco;
-                    cliente.email = txtEmail.Text;
-                    cliente.nome = txtNome.Text;
-                    cliente.telefone = txtTelefone.Text;
-                    pessoa = cliente;
+                    pessoa = new Data.Cliente();
                 }
                 else
                 {
-                    medico = new Medico();
-                    medico.endereco = endereco;
-                    medico.email = txtEmail.Text;
-                    medico.nome = txtNome.Text;
-                    medico.telefone = txtTelefone.Text;
-                    medico.crmv = Convert.ToInt32(txtCRMV.Text);
-                    pessoa = medico;
+                    pessoa = new Data.Medico();
+                    pessoa.crmv = Convert.ToInt32(txtCRMV.Text);
                 }
             }
             else
             {
                 endereco.id = pessoa.endereco.id;
-                if (pessoa is Cliente)
-                {
-                    cliente = (Cliente)pessoa;
-                    cliente.endereco = endereco;
-                    cliente.email = txtEmail.Text;
-                    cliente.nome = txtNome.Text;
-                    cliente.telefone = txtTelefone.Text;
-                    pessoa = cliente;
-                }
                 if (pessoa is Medico)
                 {
-                    medico = (Medico)pessoa;
-                    medico.endereco = endereco;
-                    medico.email = txtEmail.Text;
-                    medico.nome = txtNome.Text;
-                    medico.telefone = txtTelefone.Text;
-                    medico.crmv = Convert.ToInt32(txtCRMV.Text);
-                    pessoa = medico;
+                    pessoa.crmv = Convert.ToInt32(txtCRMV.Text);
                 }
             }
+            pessoa.endereco = endereco;
+            pessoa.email = txtEmail.Text;
+            pessoa.nome = txtNome.Text;
+            pesssoa.telefone = txtTelefone.Text;
 
         }
 
