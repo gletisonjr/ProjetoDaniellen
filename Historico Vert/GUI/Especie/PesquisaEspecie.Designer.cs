@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.grbEspecie = new System.Windows.Forms.GroupBox();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnAtualizar = new System.Windows.Forms.Button();
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.lblDescricao = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
@@ -37,8 +39,6 @@
             this.btnPesquisa = new System.Windows.Forms.Button();
             this.txtNomeEspecie = new System.Windows.Forms.TextBox();
             this.lblNomeEspecie = new System.Windows.Forms.Label();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnAtualizar = new System.Windows.Forms.Button();
             this.grbEspecie.SuspendLayout();
             this.grbPesquisa.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +59,26 @@
             this.grbEspecie.TabStop = false;
             this.grbEspecie.Text = "Espécie";
             this.grbEspecie.Visible = false;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(458, 69);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(114, 32);
+            this.btnEditar.TabIndex = 30;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.Location = new System.Drawing.Point(458, 107);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(114, 32);
+            this.btnAtualizar.TabIndex = 29;
+            this.btnAtualizar.Text = "Atualizar";
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // txtDescricao
             // 
@@ -120,10 +140,13 @@
             // 
             // txtNomeEspecie
             // 
+            this.txtNomeEspecie.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtNomeEspecie.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtNomeEspecie.Location = new System.Drawing.Point(98, 28);
             this.txtNomeEspecie.Name = "txtNomeEspecie";
             this.txtNomeEspecie.Size = new System.Drawing.Size(338, 20);
             this.txtNomeEspecie.TabIndex = 3;
+            this.txtNomeEspecie.TextChanged += new System.EventHandler(this.txtNomeEspecie_TextChanged);
             // 
             // lblNomeEspecie
             // 
@@ -133,26 +156,6 @@
             this.lblNomeEspecie.Size = new System.Drawing.Size(79, 13);
             this.lblNomeEspecie.TabIndex = 2;
             this.lblNomeEspecie.Text = "Nome Espécie:";
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Location = new System.Drawing.Point(458, 69);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(114, 32);
-            this.btnEditar.TabIndex = 30;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
-            // 
-            // btnAtualizar
-            // 
-            this.btnAtualizar.Location = new System.Drawing.Point(458, 107);
-            this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(114, 32);
-            this.btnAtualizar.TabIndex = 29;
-            this.btnAtualizar.Text = "Atualizar";
-            this.btnAtualizar.UseVisualStyleBackColor = true;
-            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // PesquisaEspecie
             // 

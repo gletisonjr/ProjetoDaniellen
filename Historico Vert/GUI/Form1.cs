@@ -164,10 +164,10 @@ namespace Historico_Vert.GUI
 
         private void tsmiEspeciePesquisar_Click(object sender, EventArgs e)
         {
-            //ClearForm();
-            //var especie = new PesquisaEspecie(this);
-            //Controls.Add(especie);
-            //Show(especie);
+            ClearForm();
+            var especie = new PesquisaEspecie(this);
+            Controls.Add(especie);
+            Show(especie);
         }
 
         private void tsmiRacaNovo_Click(object sender, EventArgs e)

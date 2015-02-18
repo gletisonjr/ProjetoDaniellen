@@ -48,7 +48,7 @@ namespace Historico_Vert.Data
         /// </summary>
         public clinicaEntities() : base("name=clinicaEntities", "clinicaEntities")
         {
-            this.ContextOptions.LazyLoadingEnabled = true;
+            this.ContextOptions.LazyLoadingEnabled = false;
             OnContextCreated();
         }
     
@@ -57,7 +57,7 @@ namespace Historico_Vert.Data
         /// </summary>
         public clinicaEntities(string connectionString) : base(connectionString, "clinicaEntities")
         {
-            this.ContextOptions.LazyLoadingEnabled = true;
+            this.ContextOptions.LazyLoadingEnabled = false;
             OnContextCreated();
         }
     
@@ -66,7 +66,7 @@ namespace Historico_Vert.Data
         /// </summary>
         public clinicaEntities(EntityConnection connection) : base(connection, "clinicaEntities")
         {
-            this.ContextOptions.LazyLoadingEnabled = true;
+            this.ContextOptions.LazyLoadingEnabled = false;
             OnContextCreated();
         }
     
