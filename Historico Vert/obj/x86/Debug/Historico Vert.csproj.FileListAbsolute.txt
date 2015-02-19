@@ -20,3 +20,23 @@ C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDa
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico Vert.csproj.GenerateResource.Cache
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico Vert.exe
 C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico Vert.pdb
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.exe.config
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico Vert.exe
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico Vert.pdb
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.exe
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\bin\Debug\Historico Vert.pdb
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.dll
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.SqlServerCompact.dll
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\bin\Debug\System.Data.SqlServerCe.dll
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.xml
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\bin\Debug\EntityFramework.SqlServerCompact.xml
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico Vert.csprojResolveAssemblyReference.cache
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.Configuracoes.Configuracoes.resources
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Especie.AddEspecie.resources
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Especie.PesquisaEspecie.resources
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Form1.resources
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Principal.Inicio.resources
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.Properties.Resources.resources
+D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico Vert.csproj.GenerateResource.Cache

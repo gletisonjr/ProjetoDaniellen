@@ -65,7 +65,7 @@
             this.btnEditar.Location = new System.Drawing.Point(458, 69);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(114, 32);
-            this.btnEditar.TabIndex = 30;
+            this.btnEditar.TabIndex = 5;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
@@ -75,7 +75,7 @@
             this.btnAtualizar.Location = new System.Drawing.Point(458, 107);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(114, 32);
-            this.btnAtualizar.TabIndex = 29;
+            this.btnAtualizar.TabIndex = 6;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
             this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
@@ -87,7 +87,7 @@
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.ReadOnly = true;
             this.txtDescricao.Size = new System.Drawing.Size(367, 125);
-            this.txtDescricao.TabIndex = 17;
+            this.txtDescricao.TabIndex = 4;
             // 
             // lblDescricao
             // 
@@ -178,7 +178,6 @@
         private System.Windows.Forms.GroupBox grbEspecie;
         private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Label lblDescricao;
-        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.GroupBox grbPesquisa;
         private System.Windows.Forms.Button btnPesquisa;
@@ -186,5 +185,6 @@
         private System.Windows.Forms.Label lblNomeEspecie;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnAtualizar;
+        private System.Windows.Forms.TextBox txtNome;
     }
 }

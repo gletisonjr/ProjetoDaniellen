@@ -7,21 +7,25 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using EntityObject = System.Data.Objects.DataClasses.EntityObject;
+using System.Windows.Forms;
+using System.IO;
 
 namespace Historico_Vert.Data
 {
     public static class DataContext
     {
+        //String conn = @"metadata=res://*/Data.clinica.csdl|res://*/Data.clinica.ssdl|res://*/Data.clinica.msl;provider=System.Data.SqlServerCe.4.0;provider connection string=""Data Source="+Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(Application.ExecutablePath)))+@"\Data\clinica.sdf"";Password =123456""";
+
         /// <summary>
         /// Método responsável por Salvar uma entidade no banco de dados.
         /// </summary>
         /// <typeparam name="T">Um tipo que seja possível persistir no modelo do entity (herança de EntityObject)</typeparam>
         /// <param name="persistentObject">Um objeto a ser persistido.</param>
         /// <returns>Mensagem de retorno.</returns>
-        public static String Save<T>(T persistentObject) where T : EntityObject
+        public static Boolean Save<T>(T persistentObject) where T : EntityObject
         {
             if (persistentObject == null)
-                return "Não foi possível salvar. Os campos estão vazios";
+                return false;
 
             using (var context = new clinicaEntities())
             {
@@ -38,7 +42,7 @@ namespace Historico_Vert.Data
                 context.SaveChanges();
             }
 
-            return "Salvo com sucesso";
+            return true;
         }
 
         /// <summary>
@@ -115,11 +119,20 @@ namespace Historico_Vert.Data
         /// <typeparam name="T">Um tipo que seja possível persistir no modelo do entity (herança de EntityObject)</typeparam>
         /// <param name="predicate"></param>
         /// <returns></returns>
-        public static T Obter<T>(Expression<Func<T, bool>> predicate) where T : EntityObject
+        public static T Obter<T>(Expression<Func<T, bool>> predicate)where T : EntityObject
         {
             using (var context = new clinicaEntities())
-                return context.CreateQuery<T>(NomeEntidade<T>(context)).FirstOrDefault(predicate);
-
+            {
+                try
+                {
+                    return context.CreateQuery<T>(NomeEntidade<T>(context)).FirstOrDefault(predicate);
+                }
+                catch (EntityException erro)
+                {
+                    MessageBox.Show(erro.ToString(), "Erro ao obter item do banco de dados", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return null ;
+                }
+            }
         }
 
 

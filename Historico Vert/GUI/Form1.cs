@@ -12,6 +12,7 @@ using Historico_Vert.DAO;
 //using Historico_Vert.GUI.BanhoTosa;
 using Historico_Vert.GUI.Especie;
 using Historico_Vert.GUI.Principal;
+using System.IO;
 
 
 namespace Historico_Vert.GUI
@@ -23,6 +24,7 @@ namespace Historico_Vert.GUI
         {
             InitializeComponent();
             var con = new Connection();
+            
             //con.Connect();
         }
      

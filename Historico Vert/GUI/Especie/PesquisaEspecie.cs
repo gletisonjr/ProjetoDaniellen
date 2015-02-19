@@ -20,6 +20,7 @@ namespace Historico_Vert.GUI.Especie
             InitializeComponent();
             txtDescricao.ScrollBars = ScrollBars.Vertical;
             especie = null;
+            btnAtualizar.Visible = false;
         }
 
         public PesquisaEspecie(Form1 form) : this()
@@ -44,8 +45,12 @@ namespace Historico_Vert.GUI.Especie
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
+            btnEditar.Enabled =
             txtDescricao.ReadOnly =
-            txtNome.ReadOnly = false;
+            txtNome.ReadOnly =
+            btnPesquisa.Enabled = false;
+            txtNomeEspecie.ReadOnly =
+            btnAtualizar.Visible = true; 
         }
 
         private void btnAtualizar_Click(object sender, EventArgs e)
@@ -54,12 +59,19 @@ namespace Historico_Vert.GUI.Especie
             especie.descricao = txtDescricao.Text;
             especie.nome = txtNome.Text;
 
-            DataContext.Save(especie);
+            if (DataContext.Save(especie))
+            {
+                btnPesquisa.Enabled =
+                txtDescricao.ReadOnly =
+                txtNome.ReadOnly = true;
+                txtNomeEspecie.ReadOnly =
+                btnAtualizar.Visible = false;
+                MessageBox.Show("Atualizado com Sucesso!", "Atualização de Espécie", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                form.DefineEvent("Inicio", new Object());
+            }
+            else
+                MessageBox.Show("Erro ao atualizar!\nPor favor verifique os dados!", "Atualização de Espécie", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            txtDescricao.ReadOnly =
-            txtNome.ReadOnly = true;
-            MessageBox.Show("Atualizado com Sucesso!", "Atualização", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            form.DefineEvent("Inicio", new Object());
         }
 
         private void txtNomeEspecie_TextChanged(object sender, EventArgs e)
