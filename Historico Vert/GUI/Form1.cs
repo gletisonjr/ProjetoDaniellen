@@ -4,7 +4,6 @@ using System.Windows.Forms;
 using System.Data;
 //using Historico_Vert.GUI.Prontuario;
 //using Historico_Vert.GUI.Paciente;
-using Historico_Vert.DAO;
 //using Historico_Vert.GUI.Pessoa;
 //using Historico_Vert.GUI.Especie;
 //using Historico_Vert.GUI.Raca;
@@ -23,9 +22,6 @@ namespace Historico_Vert.GUI
         public Form1()
         {
             InitializeComponent();
-            var con = new Connection();
-            
-            //con.Connect();
         }
      
         private void Form1_Load(object sender, EventArgs e)

@@ -83,6 +83,7 @@
             // txtDescricao
             // 
             this.txtDescricao.Location = new System.Drawing.Point(82, 54);
+            this.txtDescricao.MaxLength = 50;
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.ReadOnly = true;
@@ -101,6 +102,7 @@
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(82, 28);
+            this.txtNome.MaxLength = 100;
             this.txtNome.Name = "txtNome";
             this.txtNome.ReadOnly = true;
             this.txtNome.Size = new System.Drawing.Size(367, 20);
@@ -143,10 +145,12 @@
             this.txtNomeEspecie.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtNomeEspecie.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtNomeEspecie.Location = new System.Drawing.Point(98, 28);
+            this.txtNomeEspecie.MaxLength = 100;
             this.txtNomeEspecie.Name = "txtNomeEspecie";
             this.txtNomeEspecie.Size = new System.Drawing.Size(338, 20);
             this.txtNomeEspecie.TabIndex = 3;
             this.txtNomeEspecie.TextChanged += new System.EventHandler(this.txtNomeEspecie_TextChanged);
+            this.txtNomeEspecie.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNomeEspecie_KeyDown);
             // 
             // lblNomeEspecie
             // 

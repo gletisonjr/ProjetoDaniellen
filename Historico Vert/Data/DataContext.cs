@@ -27,10 +27,10 @@ namespace Historico_Vert.Data
             if (persistentObject == null)
                 return false;
 
-            using (var context = new clinicaEntities())
+            using (var context = new clinicaEntities(ConnectionString()))
             {
                 var nomeEntidade = NomeEntidade<T>(context);
-
+          
                 if (persistentObject.EntityKey == null)
                     context.AddObject(nomeEntidade, persistentObject);
                 else
@@ -43,6 +43,11 @@ namespace Historico_Vert.Data
             }
 
             return true;
+        }
+
+        private static String ConnectionString()
+        {
+            return ConfigurationManager.ConnectionStrings["clinicaEntities"].ConnectionString.Replace("|DataDirectory|", AppDomain.CurrentDomain.BaseDirectory.Replace(@"\bin\Debug\", String.Empty));
         }
 
         /// <summary>
@@ -75,7 +80,7 @@ namespace Historico_Vert.Data
             if (persistentObject == null)
                 return "Não foi possível realizar a exclusão deste registro";
 
-            using (var context = new clinicaEntities())
+            using (var context = new clinicaEntities(ConnectionString()))
             {
                 context.DeleteObject(persistentObject);
                 context.SaveChanges();
@@ -86,7 +91,7 @@ namespace Historico_Vert.Data
 
         public static String Delete<T>(Expression<Func<T, bool>> predicate) where T : EntityObject
         {
-            using (var context = new clinicaEntities())
+            using (var context = new clinicaEntities(ConnectionString()))
             {
                 var deleteList = context.CreateQuery<T>(NomeEntidade<T>(context)).Where(predicate).ToList();
 
@@ -107,10 +112,10 @@ namespace Historico_Vert.Data
         /// <param name="predicate">Expressão lambda do tipo predicate. Lógica</param>
         /// <param name="selecao">Expressão lambda que retorne uma string</param>
         /// <returns>Lista de String com a propriedade/coluna do banco escolhida</returns>
-        public static List<String> AutoCompleteLista<T>(Expression<Func<T, bool>> predicate, Expression<Func<T, String>> selecao) where T : EntityObject
+        public static String [] AutoCompleteLista<T>(Expression<Func<T, bool>> predicate, Expression<Func<T, String>> selecao) where T : EntityObject
         {
-            using (var context = new clinicaEntities())
-                return context.CreateQuery<T>(NomeEntidade<T>(context)).Where(predicate).Take(5).Select(selecao).ToList();
+            using (var context = new clinicaEntities(ConnectionString()))
+                return context.CreateQuery<T>(NomeEntidade<T>(context)).Where(predicate).Take(5).Select(selecao).ToArray();
         }
 
         /// <summary>
@@ -121,7 +126,7 @@ namespace Historico_Vert.Data
         /// <returns></returns>
         public static T Obter<T>(Expression<Func<T, bool>> predicate)where T : EntityObject
         {
-            using (var context = new clinicaEntities())
+            using (var context = new clinicaEntities(ConnectionString()))
             {
                 try
                 {

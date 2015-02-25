@@ -74,16 +74,16 @@ namespace Historico_Vert.GUI.Especie
 
         }
 
+        private Boolean autoCompleteUse { get; set; }
+
         private void txtNomeEspecie_TextChanged(object sender, EventArgs e)
         {
-            if (!String.IsNullOrWhiteSpace(txtNomeEspecie.Text))
+            if (!String.IsNullOrWhiteSpace(txtNomeEspecie.Text) && !autoCompleteUse)
             {
                 txtNomeEspecie.AutoCompleteCustomSource.Clear();
                 txtNomeEspecie.AutoCompleteCustomSource.AddRange(
-                    DataContext.AutoCompleteLista<Data.Especie>(a => a.nome.Contains(txtNomeEspecie.Text), a => a.nome)
-                        .ToArray());
+                    DataContext.AutoCompleteLista<Data.Especie>(a => a.nome.Contains(txtNomeEspecie.Text), a => a.nome));
             }
-
         }
 
     }
