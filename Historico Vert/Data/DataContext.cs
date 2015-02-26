@@ -105,6 +105,12 @@ namespace Historico_Vert.Data
             return "Registro(s) deletados com sucesso";
         }
 
+        public static String[] AutoCompleteLista<T>(Expression<Func<T, String>> selecao) where T : EntityObject
+        {
+            using (var context = new clinicaEntities(ConnectionString()))
+                return context.CreateQuery<T>(NomeEntidade<T>(context)).Select(selecao).ToArray();
+        }
+
         /// <summary>
         /// Método responsável por criar o AutoComplete das Entidades
         /// </summary>

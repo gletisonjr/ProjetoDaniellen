@@ -149,8 +149,6 @@
             this.txtNomeEspecie.Name = "txtNomeEspecie";
             this.txtNomeEspecie.Size = new System.Drawing.Size(338, 20);
             this.txtNomeEspecie.TabIndex = 3;
-            this.txtNomeEspecie.TextChanged += new System.EventHandler(this.txtNomeEspecie_TextChanged);
-            this.txtNomeEspecie.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNomeEspecie_KeyDown);
             // 
             // lblNomeEspecie
             // 
