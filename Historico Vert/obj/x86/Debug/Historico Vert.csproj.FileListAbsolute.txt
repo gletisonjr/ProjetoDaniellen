@@ -40,3 +40,5 @@ D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.
 D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Principal.Inicio.resources
 D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.Properties.Resources.resources
 D:\Projetos\GitHub\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico Vert.csproj.GenerateResource.Cache
+C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Raca.AddRaca.resources
+C:\Users\Felipe\Documents\Visual Studio 2010\Projects\projetoDaniellen\ProjetoDaniellen\Historico Vert\obj\x86\Debug\Historico_Vert.GUI.Raca.PesquisaRaca.resources

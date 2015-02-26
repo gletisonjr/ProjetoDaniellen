@@ -66,6 +66,7 @@
             this.txtEspecie.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtEspecie.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtEspecie.Location = new System.Drawing.Point(82, 61);
+            this.txtEspecie.MaxLength = 100;
             this.txtEspecie.Name = "txtEspecie";
             this.txtEspecie.Size = new System.Drawing.Size(205, 20);
             this.txtEspecie.TabIndex = 19;
@@ -82,6 +83,7 @@
             // txtDescricao
             // 
             this.txtDescricao.Location = new System.Drawing.Point(82, 92);
+            this.txtDescricao.MaxLength = 50;
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(367, 125);
@@ -109,6 +111,7 @@
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(82, 28);
+            this.txtNome.MaxLength = 50;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(205, 20);
             this.txtNome.TabIndex = 3;

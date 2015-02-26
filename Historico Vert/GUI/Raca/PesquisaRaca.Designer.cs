@@ -35,14 +35,14 @@
             this.txtNomeEspecie = new System.Windows.Forms.TextBox();
             this.lblNomeEspecie = new System.Windows.Forms.Label();
             this.grbRaca = new System.Windows.Forms.GroupBox();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnAtualizar = new System.Windows.Forms.Button();
             this.txtNomeEspecie1 = new System.Windows.Forms.TextBox();
             this.lblNomeEspecie1 = new System.Windows.Forms.Label();
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.lblDescricao = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnAtualizar = new System.Windows.Forms.Button();
             this.grbPesquisa.SuspendLayout();
             this.grbRaca.SuspendLayout();
             this.SuspendLayout();
@@ -94,6 +94,7 @@
             this.txtNomeEspecie.Name = "txtNomeEspecie";
             this.txtNomeEspecie.Size = new System.Drawing.Size(205, 20);
             this.txtNomeEspecie.TabIndex = 3;
+            this.txtNomeEspecie.Leave += new System.EventHandler(this.txtNomeEspecie_Leave);
             // 
             // lblNomeEspecie
             // 
@@ -122,6 +123,26 @@
             this.grbRaca.TabStop = false;
             this.grbRaca.Text = "Raça";
             this.grbRaca.Visible = false;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(468, 132);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(114, 32);
+            this.btnEditar.TabIndex = 32;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.Location = new System.Drawing.Point(468, 170);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(114, 32);
+            this.btnAtualizar.TabIndex = 31;
+            this.btnAtualizar.Text = "Atualizar";
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // txtNomeEspecie1
             // 
@@ -174,26 +195,6 @@
             this.lblNome.Size = new System.Drawing.Size(38, 13);
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome:";
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Location = new System.Drawing.Point(468, 132);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(114, 32);
-            this.btnEditar.TabIndex = 32;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
-            // 
-            // btnAtualizar
-            // 
-            this.btnAtualizar.Location = new System.Drawing.Point(468, 170);
-            this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(114, 32);
-            this.btnAtualizar.TabIndex = 31;
-            this.btnAtualizar.Text = "Atualizar";
-            this.btnAtualizar.UseVisualStyleBackColor = true;
-            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // PesquisaRaca
             // 

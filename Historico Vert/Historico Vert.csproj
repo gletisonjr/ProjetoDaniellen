@@ -137,8 +137,21 @@
     <Compile Include="GUI\Principal\Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Raca\AddRaca.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Raca\AddRaca.Designer.cs">
+      <DependentUpon>AddRaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Raca\PesquisaRaca.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Raca\PesquisaRaca.Designer.cs">
+      <DependentUpon>PesquisaRaca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\Util.cs" />
     <EmbeddedResource Include="Configuracoes\Configuracoes.resx">
       <DependentUpon>Configuracoes.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +166,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Principal\Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Raca\AddRaca.resx">
+      <DependentUpon>AddRaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Raca\PesquisaRaca.resx">
+      <DependentUpon>PesquisaRaca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -212,9 +231,7 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.94.0\build\net40\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.94.0\build\net40\System.Data.SQLite.Core.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

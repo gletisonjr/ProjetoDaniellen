@@ -6,6 +6,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Historico_Vert.Data;
+using Historico_Vert.Util;
 
 namespace Historico_Vert.GUI.Raca
 {
@@ -18,10 +20,10 @@ namespace Historico_Vert.GUI.Raca
             InitializeComponent();
         }
 
-        public PesquisaRaca(Form1 form)
+        public PesquisaRaca(Form1 form) : this()
         {
-            InitializeComponent();
             this.form = form;
+            txtNomeEspecie.CarregarAutoComplete<Data.Especie>(a => a.nome);
         }
 
         private void btnPesquisa_Click(object sender, EventArgs e)
@@ -43,6 +45,22 @@ namespace Historico_Vert.GUI.Raca
             txtNomeEspecie1.ReadOnly = true;
             MessageBox.Show("Atualizado com Sucesso!", "Atualização", MessageBoxButtons.OK, MessageBoxIcon.Information);
             form.DefineEvent("Inicio", new Object());
+        }
+
+        private void txtNomeEspecie_Leave(object sender, EventArgs e)
+        {
+            if (String.IsNullOrWhiteSpace(txtNomeEspecie.Text))
+                return;
+
+            var especie = DataContext.Obter<Data.Especie>(o => o.nome == txtNomeEspecie.Text);
+
+            if (especie == null)
+            {
+                MessageBox.Show("Não existe esta espécie!", "Espécie", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            txtNomeRaca.CarregarAutoComplete<Data.Raca>(a => a.nome,  b => b.idEspecie == especie.id);
         }
     }
 }

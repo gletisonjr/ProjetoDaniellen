@@ -12,6 +12,7 @@ using System.Data;
 using Historico_Vert.GUI.Especie;
 using Historico_Vert.GUI.Principal;
 using System.IO;
+using Historico_Vert.GUI.Raca;
 
 
 namespace Historico_Vert.GUI
@@ -170,18 +171,17 @@ namespace Historico_Vert.GUI
 
         private void tsmiRacaNovo_Click(object sender, EventArgs e)
         {
-            //ClearForm();
-            //var raca = new AddRaca(this);
-            //Controls.Add(raca);
-            //Show(raca);
+            ClearForm();
+            var raca = new AddRaca(this);
+            Controls.Add(raca);
         }
 
         private void tsmiRacaPesquisar_Click(object sender, EventArgs e)
         {
-            //ClearForm();
-            //var raca = new PesquisaRaca(this);
-            //Controls.Add(raca);
-            //Show(raca);
+            ClearForm();
+            var raca = new PesquisaRaca(this);
+            Controls.Add(raca);
+            Show(raca);
         }
 
         private void tsmiMedicoNovo_Click(object sender, EventArgs e)

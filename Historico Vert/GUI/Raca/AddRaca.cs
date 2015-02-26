@@ -6,6 +6,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Historico_Vert.Data;
+using Historico_Vert.Util;
 
 namespace Historico_Vert.GUI.Raca
 {
@@ -17,6 +19,7 @@ namespace Historico_Vert.GUI.Raca
         {
             InitializeComponent();
             txtDescricao.ScrollBars = ScrollBars.Vertical;
+            txtEspecie.CarregarAutoComplete<Data.Especie>(a => a.nome);
         }
 
         public AddRaca(Form1 form)
@@ -28,6 +31,21 @@ namespace Historico_Vert.GUI.Raca
 
         private void btnAcao_Click(object sender, EventArgs e)
         {
+            var especie = DataContext.Obter<Data.Especie>(o => o.nome == txtEspecie.Text);
+
+            if (especie == null)
+            {
+                MessageBox.Show("Escolha uma espécie válida", "Erro ao Cadastrar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var raca = new Data.Raca();
+            raca.nome = txtNome.Text;
+            raca.descricao = txtDescricao.Text;
+            raca.idEspecie = especie.id;
+
+            DataContext.Save(raca);
+
             MessageBox.Show("Cadastro efetuado com sucesso!", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
             form.DefineEvent("Inicio", new Object());
         }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Historico_Vert.Data;
+using Historico_Vert.Util;
 
 namespace Historico_Vert.GUI.Especie
 {
@@ -21,14 +22,7 @@ namespace Historico_Vert.GUI.Especie
             txtDescricao.ScrollBars = ScrollBars.Vertical;
             especie = null;
             btnAtualizar.Visible = false;
-            AutoComplete();
-        }
-
-        private void AutoComplete()
-        {
-            txtNomeEspecie.AutoCompleteCustomSource.Clear();
-            txtNomeEspecie.AutoCompleteCustomSource.AddRange(
-                DataContext.AutoCompleteLista<Data.Especie>(a => a.nome));
+            txtNomeEspecie.CarregarAutoComplete<Data.Especie>(a => a.nome);
         }
 
         public PesquisaEspecie(Form1 form) : this()
